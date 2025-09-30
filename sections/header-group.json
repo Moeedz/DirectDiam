@@ -30,13 +30,13 @@
         "message_cxe74X": {
           "type": "message",
           "settings": {
-            "text": "30 DÍAS PARA CAMBIOS Y DEVOLUCIONES"
+            "text": "FREE SHIPPING ORDER NOW"
           }
         },
         "message_DTKxkK": {
           "type": "message",
           "settings": {
-            "text": "ENVÍO GRATIS PARA ESPAÑA DESDE 60€"
+            "text": "NEW COLLECTION IS LIVE"
           }
         }
       },
@@ -44,7 +44,6 @@
         "message_cxe74X",
         "message_DTKxkK"
       ],
-      "disabled": true,
       "settings": {
         "color_scheme": "",
         "enable_sticky": true,
@@ -94,8 +93,8 @@
         "hide_on_scroll": false,
         "show_separation_border": false,
         "reduce_padding": true,
-        "logo": "{{ shop.brand.logo }}",
-        "logo_max_width": 150,
+        "logo": "shopify://shop_images/FBLOGO.jpg",
+        "logo_max_width": 235,
         "logo_mobile_max_width": 150,
         "menu": "main-menu",
         "sidebar_menu": "",
@@ -104,7 +103,7 @@
         "sidebar_color_scheme": "",
         "sidebar_text_font": "heading",
         "sidebar_show_dividers": false,
-        "layout": "logo_center_navigation_inline",
+        "layout": "logo_center_navigation_below",
         "show_icons": true,
         "show_country_selector": true,
         "show_country_name": false,
