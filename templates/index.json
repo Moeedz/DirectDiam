@@ -229,6 +229,9 @@
         "collection_qPncmw",
         "collection_TciRQp"
       ],
+      "custom_css": [
+        ".collection-list .collection-card {flex-basis: var(--collection-list-item-size, calc(100% / 8 - var(--collection-list-gap, 0px) * (var(--collection-list-items-per-row) - 1) / var(--collection-list-items-per-row)))}"
+      ],
       "name": "t:sections.collection_list.presets.collection_list.name",
       "settings": {
         "color_scheme": "",
