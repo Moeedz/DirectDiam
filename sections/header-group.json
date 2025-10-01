@@ -87,6 +87,7 @@
         "mega_menu_BgnMYd",
         "mega_menu_VAP3p3"
       ],
+      "custom_css": [],
       "settings": {
         "color_scheme": "",
         "enable_sticky": true,
@@ -103,7 +104,7 @@
         "sidebar_color_scheme": "",
         "sidebar_text_font": "heading",
         "sidebar_show_dividers": false,
-        "layout": "logo_center_navigation_below",
+        "layout": "logo_left_navigation_center",
         "show_icons": true,
         "show_country_selector": true,
         "show_country_name": false,
