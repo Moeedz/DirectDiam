@@ -111,65 +111,10 @@
         "title": "Related products",
         "content": ""
       }
-    },
-    "ss_testimonial_slider_xYctaM": {
-      "type": "ss-testimonial-slider",
-      "blocks": {
-        "quote_JbtzCM": {
-          "type": "quote",
-          "settings": {
-            "subheading": "FROM OUR CUSTOMERS",
-            "rating": 5,
-            "quote": "<p>Found an amazing deal for my new jacket shirt from Section Store. Delivery was quick as well.</p>",
-            "author": "Ellie, Manchester"
-          }
-        },
-        "quote_7xwk7R": {
-          "type": "quote",
-          "settings": {
-            "subheading": "FROM OUR CUSTOMERS",
-            "rating": 5,
-            "quote": "<p>I love my new swater sunglasses. Section store provided 1st class customer service</p>",
-            "author": "James, London"
-          }
-        },
-        "quote_Gfmqcm": {
-          "type": "quote",
-          "settings": {
-            "subheading": "FROM OUR CUSTOMERS",
-            "rating": 5,
-            "quote": "<p>Thank you for my new stool. I even got an additional discount when I called their customer service!</p>",
-            "author": "Melanie, London"
-          }
-        }
-      },
-      "block_order": [
-        "quote_JbtzCM",
-        "quote_7xwk7R",
-        "quote_Gfmqcm"
-      ],
-      "name": "SS - Testimonial slider",
-      "settings": {
-        "seconds_to_slide": 5,
-        "subheading": "FROM OUR CUSTOMERS",
-        "subheading_color": "#000000",
-        "star_color": "#000000",
-        "text_color": "#000000",
-        "author_color": "#000000",
-        "arrow_color": "#000000",
-        "subheading_font_size": 16,
-        "text_font_size": 20,
-        "author_font_size": 12,
-        "background-color": "#ffffff",
-        "padding_top": 36,
-        "padding_bottom": 36,
-        "section-width": 120
-      }
     }
   },
   "order": [
     "main",
-    "related-products",
-    "ss_testimonial_slider_xYctaM"
+    "related-products"
   ]
 }
