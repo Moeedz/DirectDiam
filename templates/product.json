@@ -67,16 +67,6 @@
             "payment_button_background": "",
             "payment_button_text_color": ""
           }
-        },
-        "complementary_products": {
-          "type": "complementary_products",
-          "settings": {
-            "title": "Pairs well with",
-            "products_count": 2,
-            "show_below_gallery": true,
-            "stack_products": false,
-            "show_quick_buy": true
-          }
         }
       },
       "block_order": [
@@ -88,8 +78,7 @@
         "liquid_tmzkAX",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons",
-        "complementary_products"
+        "buy_buttons"
       ],
       "settings": {
         "color_scheme": "",
