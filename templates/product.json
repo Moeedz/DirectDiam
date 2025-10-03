@@ -97,6 +97,9 @@
     },
     "related-products": {
       "type": "related-products",
+      "custom_css": [
+        ".section-header.justify-self-center.text-center {width: 100% !important; max-width: 100% !important; text-align: -webkit-left !important;}"
+      ],
       "settings": {
         "color_scheme": "",
         "separate_section_with_border": false,
