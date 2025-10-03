@@ -78,6 +78,10 @@
             "liquid": "",
             "page": ""
           }
+        },
+        "share_buttons_AzrpcW": {
+          "type": "share_buttons",
+          "settings": {}
         }
       },
       "block_order": [
@@ -90,7 +94,8 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "accordion_grFqeR"
+        "accordion_grFqeR",
+        "share_buttons_AzrpcW"
       ],
       "settings": {
         "color_scheme": "scheme-312794de-9b4c-482f-a3df-b0a3d2e1e474",
