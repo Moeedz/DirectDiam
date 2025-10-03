@@ -67,6 +67,17 @@
             "payment_button_background": "#c9a236",
             "payment_button_text_color": "#ffffff"
           }
+        },
+        "accordion_grFqeR": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": true,
+            "icon": "none",
+            "title": "Product Description",
+            "content": "{{ product.description }}",
+            "liquid": "",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -78,7 +89,8 @@
         "liquid_tmzkAX",
         "variant_picker",
         "quantity_selector",
-        "buy_buttons"
+        "buy_buttons",
+        "accordion_grFqeR"
       ],
       "settings": {
         "color_scheme": "scheme-312794de-9b4c-482f-a3df-b0a3d2e1e474",
