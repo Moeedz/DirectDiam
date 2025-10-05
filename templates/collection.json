@@ -28,6 +28,9 @@
     },
     "main": {
       "type": "main-collection",
+      "custom_css": [
+        "section {margin-left: auto !important; margin-right: auto !important; max-width: calc(1800px + 40px) !important;}"
+      ],
       "settings": {
         "color_scheme": "scheme-2",
         "hide_product_information": false,
