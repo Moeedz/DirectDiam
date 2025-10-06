@@ -5051,7 +5051,7 @@ product-rerender {
 
 .mega-menu {
   max-height: calc(100vh - var(--header-height, 0px)  - var(--announcement-bar-height, 0px)  - 20px);
-  justify-content: safe center;
+  justify-content: space-evenly;
   align-items: start;
   column-gap: var(--mega-menu-gap);
   background: rgb(var(--background));
