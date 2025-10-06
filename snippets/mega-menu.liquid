@@ -1,6 +1,6 @@
 {%- comment -%}
 ----------------------------------------------------------------------------------------------------------------------
-MEGA MENU COMPONENT
+MEGA MENU COMPONENT WITH ICONS
 ----------------------------------------------------------------------------------------------------------------------
 
 Render the mega-menu. The mega-menu is a kind of menu optimized for showing a large number of items into several
@@ -15,18 +15,59 @@ Supported variables
 * block: the block containing all the information about the menu to render
 {%- endcomment -%}
 
+{%- comment -%} Fetch all menu icons {%- endcomment -%}
+{%- assign menu_icons = shop.metaobjects.menu_icon.values -%}
+
 <div class="mega-menu {% if block.settings.images_position == 'left' %}mega-menu--reverse{% endif %}" {{ block.shopify_attributes }}>
   {%- if link.levels > 0 -%}
     <ul class="mega-menu__linklist unstyled-list">
       {%- for sub_link in link.links -%}
+        {%- comment -%} Find matching icon for this menu item {%- endcomment -%}
+        {%- assign menu_icon = null -%}
+        {%- for icon in menu_icons -%}
+          {%- if icon.menu_item_title == sub_link.title -%}
+            {%- assign menu_icon = icon.icon_image -%}
+            {%- break -%}
+          {%- endif -%}
+        {%- endfor -%}
+        
         <li class="v-stack justify-items-start gap-5">
-          <a href="{{ sub_link.url }}" class="h6">{{ sub_link.title }}</a>
+          <a href="{{ sub_link.url }}" class="h6 mega-menu__title-with-icon">
+            {%- if menu_icon != blank -%}
+              <img src="{{ menu_icon | image_url: width: 48 }}" 
+                   alt="{{ sub_link.title }}" 
+                   class="mega-menu__icon"
+                   loading="lazy"
+                   width="24"
+                   height="24">
+            {%- endif -%}
+            <span>{{ sub_link.title }}</span>
+          </a>
 
           {%- if sub_link.links.size > 0 -%}
             <ul class="v-stack gap-2.5 unstyled-list">
               {%- for sub_sub_link in sub_link.links -%}
+                {%- comment -%} Find matching icon for nested item {%- endcomment -%}
+                {%- assign sub_menu_icon = null -%}
+                {%- for icon in menu_icons -%}
+                  {%- if icon.menu_item_title == sub_sub_link.title -%}
+                    {%- assign sub_menu_icon = icon.icon_image -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+                
                 <li>
-                  <a href="{{ sub_sub_link.url }}" class="link-faded">{{ sub_sub_link.title }}</a>
+                  <a href="{{ sub_sub_link.url }}" class="link-faded mega-menu__link-with-icon">
+                    {%- if sub_menu_icon != blank -%}
+                      <img src="{{ sub_menu_icon | image_url: width: 40 }}" 
+                           alt="{{ sub_sub_link.title }}" 
+                           class="mega-menu__icon mega-menu__icon--small"
+                           loading="lazy"
+                           width="20"
+                           height="20">
+                    {%- endif -%}
+                    <span>{{ sub_sub_link.title }}</span>
+                  </a>
                 </li>
               {%- endfor -%}
             </ul>
@@ -46,3 +87,29 @@ Supported variables
     </div>
   {%- endif -%}
 </div>
+
+<style>
+  .mega-menu__title-with-icon,
+  .mega-menu__link-with-icon {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .mega-menu__icon {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    flex-shrink: 0;
+  }
+
+  .mega-menu__icon--small {
+    width: 20px;
+    height: 20px;
+    opacity: 0.8;
+  }
+
+  .mega-menu__link-with-icon:hover .mega-menu__icon--small {
+    opacity: 1;
+  }
+</style>
