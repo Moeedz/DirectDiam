@@ -184,16 +184,17 @@
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-1",
-            "collection": "",
+            "collection": "matchig-pair",
+            "image": "shopify://shop_images/original-14350-PEAR-13f9c827-4c13-499f-a737-baa2bca1a761_5e6ca4f4-fae7-45f6-87ab-4cfbc8d7abec.webp",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
-            "subheading": "Enter the detailed description here",
-            "title": "Heading",
-            "button_text": "View products",
-            "button_link": "",
+            "subheading": "Perfectly matched diamonds, hand-selected for identical color, size, and brilliance, ideal for earrings or bespoke creations.",
+            "title": "Diamond Matching Pairs",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/matchig-pair",
             "button_style": "solid",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_CyjxAD": {
