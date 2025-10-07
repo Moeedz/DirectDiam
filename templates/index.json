@@ -201,16 +201,17 @@
           "type": "collection",
           "settings": {
             "color_scheme": "scheme-1",
-            "collection": "",
+            "collection": "all-color-diamonds",
+            "image": "shopify://shop_images/Various-Diamond-Colors.jpg",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
-            "subheading": "Enter the detailed description here",
-            "title": "Heading",
-            "button_text": "View products",
-            "button_link": "",
+            "subheading": "Explore our complete collection of rare fancy color diamonds, each hand-selected for its exceptional hue, brilliance, and beauty.",
+            "title": "ALL FANCY DIAMONDS",
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/all-color-diamonds",
             "button_style": "solid",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         },
         "collection_tYGURd": {
