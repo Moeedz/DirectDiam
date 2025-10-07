@@ -76,7 +76,7 @@
         "heading_qranEJ"
       ],
       "custom_css": [
-        ".color-scheme.color-scheme--scheme-1.color-scheme--bg-54922f2e920ba8346f6dc0fba343d673.section-spacing {padding-top: 25px !important; padding-bottom: 25px !important;}",
+        ".color-scheme.color-scheme--scheme-1.color-scheme--bg-54922f2e920ba8346f6dc0fba343d673.section-spacing {padding-top: 45px !important; padding-bottom: 25px !important;}",
         "p.h1 {margin-top: 11px !important;}",
         "p.h6 {font-size: 1rem !important; line-height: 1 !important;}"
       ],
