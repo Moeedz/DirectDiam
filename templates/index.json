@@ -282,7 +282,7 @@
             "collection": "yellow",
             "product_limit": 5,
             "product_row_count": 5,
-            "mobile_product_row_count": 2,
+            "mobile_product_row_count": 1,
             "enable_swiper_on_mobile": true,
             "product_image_orientation": "square",
             "button_mt": 48,
@@ -308,10 +308,10 @@
         "collection_pGrzey": {
           "type": "collection",
           "settings": {
-            "title": "Analog",
-            "collection": "",
-            "product_limit": 6,
-            "product_row_count": 4,
+            "title": "Green Diamonds",
+            "collection": "green",
+            "product_limit": 5,
+            "product_row_count": 5,
             "mobile_product_row_count": 1,
             "enable_swiper_on_mobile": false,
             "product_image_orientation": "square",
