@@ -96,26 +96,26 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Background_Removed_Image_from_Ideogram_2.png",
-            "title": "New Slide",
-            "button": "Learn more",
-            "url": ""
+            "title": "Orange Diamond",
+            "button": "Shop Now",
+            "url": "shopify://collections/orange"
           }
         },
         "slide_edCbNX": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Background_Removed_Image_1.png",
-            "title": "New Slide",
-            "button": "Learn more",
-            "url": ""
+            "title": "Blue Diamonds",
+            "button": "Shop Now",
+            "url": "shopify://collections/blue"
           }
         },
         "slide_4ExAQf": {
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Background_Removed_Image_2.png",
-            "title": "New Slide",
-            "button": "Learn more",
+            "title": "Purple Diamonds",
+            "button": "Shop Now",
             "url": ""
           }
         },
@@ -123,8 +123,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Background_Removed_Image_from_Ideogram_3.png",
-            "title": "New Slide",
-            "button": "Learn more",
+            "title": "Red Diamonds",
+            "button": "Shop Now",
             "url": ""
           }
         },
@@ -132,8 +132,8 @@
           "type": "slide",
           "settings": {
             "image": "shopify://shop_images/Background_Removed_Image_from_Ideogram_4.png",
-            "title": "New Slide",
-            "button": "Learn more",
+            "title": "Green Diamonds",
+            "button": "Shop Now",
             "url": ""
           }
         }
@@ -190,7 +190,7 @@
         "card_border_color": "rgba(0,0,0,0)",
         "card_shadow_color": "rgba(0,0,0,0)",
         "card_overlay_color": "#121212",
-        "button_color": "#fff",
+        "button_color": "#ffffff",
         "button_hover_color": "#121212",
         "button_bg_color": "#000000",
         "button_bg_hover_color": "#ffffff",
