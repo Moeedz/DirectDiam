@@ -95,6 +95,7 @@
         "slide_RnnDyp": {
           "type": "slide",
           "settings": {
+            "image": "shopify://shop_images/blue.avif",
             "title": "New Slide",
             "button": "Learn more",
             "url": ""
