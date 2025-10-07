@@ -188,7 +188,7 @@
         "arrow_show_mobile": true,
         "title_color": "#000000",
         "card_border_color": "rgba(0,0,0,0)",
-        "card_shadow_color": "#121212",
+        "card_shadow_color": "rgba(0,0,0,0)",
         "card_overlay_color": "#121212",
         "button_color": "#fff",
         "button_hover_color": "#121212",
