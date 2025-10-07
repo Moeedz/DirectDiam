@@ -287,7 +287,7 @@
             "product_image_orientation": "square",
             "button_mt": 48,
             "button_text": "Shop Now",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://collections/yellow"
           }
         },
         "collection_AfjKrN": {
@@ -302,7 +302,7 @@
             "product_image_orientation": "square",
             "button_mt": 48,
             "button_text": "Shop Now",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://collections/pink-diamond"
           }
         },
         "collection_pGrzey": {
@@ -317,7 +317,7 @@
             "product_image_orientation": "square",
             "button_mt": 48,
             "button_text": "Shop Now",
-            "button_link": "shopify://collections/all"
+            "button_link": "shopify://collections/green"
           }
         }
       },
