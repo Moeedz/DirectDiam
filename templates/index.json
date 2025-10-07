@@ -176,10 +176,83 @@
         "border_thickness": 0,
         "lazy": true
       }
+    },
+    "collection_list_YhxBEh": {
+      "type": "collection-list",
+      "blocks": {
+        "collection_ktUR8p": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "Subheading",
+            "title": "Heading",
+            "button_text": "View products",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_CyjxAD": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "Subheading",
+            "title": "Heading",
+            "button_text": "View products",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        },
+        "collection_tYGURd": {
+          "type": "collection",
+          "settings": {
+            "color_scheme": "scheme-1",
+            "collection": "",
+            "expand_collection": false,
+            "content_position": "place-self-center text-center",
+            "subheading": "Subheading",
+            "title": "Heading",
+            "button_text": "View products",
+            "button_link": "",
+            "button_style": "solid",
+            "overlay_color": "#000000",
+            "overlay_opacity": 30
+          }
+        }
+      },
+      "block_order": [
+        "collection_ktUR8p",
+        "collection_CyjxAD",
+        "collection_tYGURd"
+      ],
+      "name": "t:sections.collection_list.presets.collection_list.name",
+      "settings": {
+        "color_scheme": "scheme-2",
+        "separate_section_with_border": false,
+        "image_size": "auto",
+        "show_text_outside": true,
+        "space_items": true,
+        "stack_collections": true,
+        "collections_per_row_mobile": "1",
+        "collections_per_row_desktop": 3,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
     }
   },
   "order": [
     "slideshow",
-    "ss_slider_2_TfqnAN"
+    "ss_slider_2_TfqnAN",
+    "collection_list_YhxBEh"
   ]
 }
