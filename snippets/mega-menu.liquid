@@ -18,7 +18,7 @@ Supported variables
 {%- comment -%} Fetch all menu icons {%- endcomment -%}
 {%- assign menu_icons = shop.metaobjects.menu_icon.values -%}
 
-<div class="mega-menu mega-menu--animated {% if block.settings.images_position == 'left' %}mega-menu--reverse{% endif %}" {{ block.shopify_attributes }}>
+<div class="mega-menu mega-menu--animated {% if block.settings.images_position == 'left' %}mega-menu--reverse{% endif %}" {{ block.shopify_attributes }} data-mega-menu>
   {%- if link.levels > 0 -%}
     <ul class="mega-menu__linklist unstyled-list">
       {%- for sub_link in link.links -%}
@@ -88,6 +88,44 @@ Supported variables
   {%- endif -%}
 </div>
 
+<script>
+  (function() {
+    // Function to trigger mega menu animations
+    function initMegaMenuAnimations() {
+      const megaMenus = document.querySelectorAll('[data-mega-menu]');
+      
+      megaMenus.forEach(menu => {
+        // Find the parent navigation item that triggers this mega menu
+        const parentNavItem = menu.closest('li') || menu.closest('.header__menu-item') || menu.parentElement;
+        
+        if (parentNavItem) {
+          let hoverTimeout;
+          
+          parentNavItem.addEventListener('mouseenter', function() {
+            clearTimeout(hoverTimeout);
+            // Small delay to ensure mega menu is visible
+            hoverTimeout = setTimeout(() => {
+              menu.classList.add('mega-menu--visible');
+            }, 10);
+          });
+          
+          parentNavItem.addEventListener('mouseleave', function() {
+            clearTimeout(hoverTimeout);
+            menu.classList.remove('mega-menu--visible');
+          });
+        }
+      });
+    }
+    
+    // Initialize when DOM is ready
+    if (document.readyState === 'loading') {
+      document.addEventListener('DOMContentLoaded', initMegaMenuAnimations);
+    } else {
+      initMegaMenuAnimations();
+    }
+  })();
+</script>
+
 <style>
   /* Base icon styles */
   .mega-menu__title-with-icon,
@@ -144,26 +182,26 @@ Supported variables
     opacity: 0;
   }
 
-  /* Trigger animations on hover - using :hover on parent navigation item */
-  .mega-menu:hover .mega-menu__column-item {
+  /* Trigger animations when mega menu is visible */
+  .mega-menu--visible .mega-menu__column-item {
     animation: fadeInUp 0.4s ease forwards;
-    animation-delay: calc(var(--item-index) * 0.05s);
+    animation-delay: calc(var(--item-index) * 0.06s);
   }
 
-  .mega-menu:hover .mega-menu__sub-item {
+  .mega-menu--visible .mega-menu__sub-item {
     animation: fadeInUp 0.3s ease forwards;
-    animation-delay: calc(0.1s + var(--sub-item-index) * 0.05s);
+    animation-delay: calc(0.15s + var(--sub-item-index) * 0.04s);
   }
 
-  .mega-menu:hover .mega-menu__promo-animated {
-    animation: fadeInScale 0.5s ease forwards;
-    animation-delay: 0.15s;
+  .mega-menu--visible .mega-menu__promo-animated {
+    animation: fadeInScale 0.6s ease forwards;
+    animation-delay: 0.2s;
   }
 
-  /* Reset animation when not hovering */
-  .mega-menu:not(:hover) .mega-menu__column-item,
-  .mega-menu:not(:hover) .mega-menu__sub-item,
-  .mega-menu:not(:hover) .mega-menu__promo-animated {
+  /* Reset animation when not visible */
+  .mega-menu:not(.mega-menu--visible) .mega-menu__column-item,
+  .mega-menu:not(.mega-menu--visible) .mega-menu__sub-item,
+  .mega-menu:not(.mega-menu--visible) .mega-menu__promo-animated {
     animation: none;
     opacity: 0;
   }
@@ -179,10 +217,10 @@ Supported variables
 
   /* Image animation with zoom effect */
   .mega-menu__promo-animated img {
-    transition: transform 0.3s ease;
+    transition: transform 0.4s ease;
   }
 
-  .mega-menu:hover .mega-menu__promo-animated img {
+  .mega-menu--visible .mega-menu__promo-animated img {
     transform: scale(1.05);
   }
 </style>
