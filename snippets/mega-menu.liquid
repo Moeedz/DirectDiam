@@ -103,7 +103,8 @@ Supported variables
           
           parentNavItem.addEventListener('mouseenter', function() {
             clearTimeout(hoverTimeout);
-            // Small delay to ensure mega menu is visible
+            // Remove exiting class and add visible class
+            menu.classList.remove('mega-menu--exiting');
             hoverTimeout = setTimeout(() => {
               menu.classList.add('mega-menu--visible');
             }, 10);
@@ -111,7 +112,14 @@ Supported variables
           
           parentNavItem.addEventListener('mouseleave', function() {
             clearTimeout(hoverTimeout);
+            // Add exiting class for exit animation
             menu.classList.remove('mega-menu--visible');
+            menu.classList.add('mega-menu--exiting');
+            
+            // Remove exiting class after animation completes
+            setTimeout(() => {
+              menu.classList.remove('mega-menu--exiting');
+            }, 400); // Match this with your animation duration
           });
         }
       });
@@ -164,6 +172,17 @@ Supported variables
     }
   }
 
+  @keyframes fadeOutDown {
+    from {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+  }
+
   @keyframes fadeInScale {
     from {
       opacity: 0;
@@ -175,6 +194,17 @@ Supported variables
     }
   }
 
+  @keyframes fadeOutScale {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.98);
+    }
+  }
+
   /* Initial hidden state */
   .mega-menu__column-item,
   .mega-menu__sub-item,
@@ -182,7 +212,7 @@ Supported variables
     opacity: 0;
   }
 
-  /* Trigger animations when mega menu is visible */
+  /* ENTRY ANIMATIONS - when mega menu becomes visible */
   .mega-menu--visible .mega-menu__column-item {
     animation: fadeInUp 0.4s ease forwards;
     animation-delay: calc(var(--item-index) * 0.06s);
@@ -198,12 +228,20 @@ Supported variables
     animation-delay: 0.2s;
   }
 
-  /* Reset animation when not visible */
-  .mega-menu:not(.mega-menu--visible) .mega-menu__column-item,
-  .mega-menu:not(.mega-menu--visible) .mega-menu__sub-item,
-  .mega-menu:not(.mega-menu--visible) .mega-menu__promo-animated {
-    animation: none;
-    opacity: 0;
+  /* EXIT ANIMATIONS - when mega menu is closing */
+  .mega-menu--exiting .mega-menu__column-item {
+    animation: fadeOutDown 0.3s ease forwards;
+    animation-delay: 0s;
+  }
+
+  .mega-menu--exiting .mega-menu__sub-item {
+    animation: fadeOutDown 0.25s ease forwards;
+    animation-delay: 0s;
+  }
+
+  .mega-menu--exiting .mega-menu__promo-animated {
+    animation: fadeOutScale 0.3s ease forwards;
+    animation-delay: 0s;
   }
 
   /* Smooth hover effect on items */
@@ -222,5 +260,9 @@ Supported variables
 
   .mega-menu--visible .mega-menu__promo-animated img {
     transform: scale(1.05);
+  }
+
+  .mega-menu--exiting .mega-menu__promo-animated img {
+    transform: scale(1);
   }
 </style>
