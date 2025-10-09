@@ -242,31 +242,13 @@
           "settings": {
             "color_scheme": "scheme-1",
             "collection": "all-color-diamonds",
-            "image": "shopify://shop_images/Mikel-Grant-Jewellery-One-Of-A-Kind-Natural-Lapis-Lazuli-Necklace-1_600x600_95d7486f-47ab-49a3-b627-99a486361a23.jpg",
+            "image": "shopify://shop_images/Untitled_design_17.png",
             "expand_collection": false,
             "content_position": "place-self-center text-center",
             "subheading": "Discover our exclusive one-of-a-kind jewelry, meticulously crafted to showcase the rare beauty of each individual diamond.",
             "title": "One Of A Kind Jewelry",
             "button_text": "Shop Now",
             "button_link": "shopify://collections/all-color-diamonds",
-            "button_style": "solid",
-            "overlay_color": "#000000",
-            "overlay_opacity": 0
-          }
-        },
-        "collection_ktUR8p": {
-          "type": "collection",
-          "disabled": true,
-          "settings": {
-            "color_scheme": "scheme-1",
-            "collection": "matchig-pair",
-            "image": "shopify://shop_images/original-14350-PEAR-13f9c827-4c13-499f-a737-baa2bca1a761_5e6ca4f4-fae7-45f6-87ab-4cfbc8d7abec.webp",
-            "expand_collection": false,
-            "content_position": "place-self-center text-center",
-            "subheading": "Perfectly matched diamonds, hand-selected for identical color, size, and brilliance, ideal for earrings or bespoke creations.",
-            "title": "Diamond Matching Pairs",
-            "button_text": "Shop Now",
-            "button_link": "shopify://collections/matchig-pair",
             "button_style": "solid",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -286,14 +268,13 @@
             "button_link": "",
             "button_style": "solid",
             "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "overlay_opacity": 0
           }
         }
       },
       "block_order": [
         "collection_CyjxAD",
         "collection_AtKKeL",
-        "collection_ktUR8p",
         "collection_tYGURd"
       ],
       "custom_css": [
