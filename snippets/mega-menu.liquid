@@ -119,7 +119,7 @@ Supported variables
             // Remove exiting class after animation completes
             setTimeout(() => {
               menu.classList.remove('mega-menu--exiting');
-            }, 400); // Match this with your animation duration
+            }, 350); // Slightly shorter to ensure clean transition
           });
         }
       });
@@ -205,6 +205,15 @@ Supported variables
     }
   }
 
+  @keyframes menuFadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
   /* Initial hidden state */
   .mega-menu__column-item,
   .mega-menu__sub-item,
@@ -229,6 +238,11 @@ Supported variables
   }
 
   /* EXIT ANIMATIONS - when mega menu is closing */
+  /* Fade out the entire mega menu container */
+  .mega-menu--exiting {
+    animation: menuFadeOut 0.3s ease forwards;
+  }
+
   .mega-menu--exiting .mega-menu__column-item {
     animation: fadeOutDown 0.3s ease forwards;
     animation-delay: 0s;
