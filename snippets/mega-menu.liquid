@@ -100,26 +100,37 @@ Supported variables
         
         if (parentNavItem) {
           let hoverTimeout;
+          let exitTimeout;
           
           parentNavItem.addEventListener('mouseenter', function() {
+            // Clear any pending timeouts
             clearTimeout(hoverTimeout);
-            // Remove exiting class and add visible class
+            clearTimeout(exitTimeout);
+            
+            // Remove exiting class immediately
             menu.classList.remove('mega-menu--exiting');
+            menu.classList.remove('mega-menu--hidden');
+            
+            // Add visible class after a tiny delay
             hoverTimeout = setTimeout(() => {
               menu.classList.add('mega-menu--visible');
             }, 10);
           });
           
           parentNavItem.addEventListener('mouseleave', function() {
+            // Clear any pending timeouts
             clearTimeout(hoverTimeout);
-            // Add exiting class for exit animation
+            clearTimeout(exitTimeout);
+            
+            // Remove visible and add exiting
             menu.classList.remove('mega-menu--visible');
             menu.classList.add('mega-menu--exiting');
             
-            // Remove exiting class after animation completes
-            setTimeout(() => {
+            // After animation, add hidden class to keep it invisible
+            exitTimeout = setTimeout(() => {
               menu.classList.remove('mega-menu--exiting');
-            }, 350); // Slightly shorter to ensure clean transition
+              menu.classList.add('mega-menu--hidden');
+            }, 300); // Match animation duration
           });
         }
       });
@@ -214,11 +225,18 @@ Supported variables
     }
   }
 
-  /* Initial hidden state */
+  /* Initial hidden state and force hidden when mega-menu--hidden */
   .mega-menu__column-item,
   .mega-menu__sub-item,
   .mega-menu__promo-animated {
     opacity: 0;
+  }
+
+  /* Keep mega menu completely hidden when not in use */
+  .mega-menu--hidden,
+  .mega-menu--hidden * {
+    opacity: 0 !important;
+    pointer-events: none;
   }
 
   /* ENTRY ANIMATIONS - when mega menu becomes visible */
@@ -238,9 +256,9 @@ Supported variables
   }
 
   /* EXIT ANIMATIONS - when mega menu is closing */
-  /* Fade out the entire mega menu container */
   .mega-menu--exiting {
     animation: menuFadeOut 0.3s ease forwards;
+    pointer-events: none;
   }
 
   .mega-menu--exiting .mega-menu__column-item {
