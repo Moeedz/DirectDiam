@@ -31,7 +31,7 @@ Supported variables
           {%- endif -%}
         {%- endfor -%}
         
-        <li class="v-stack justify-items-start gap-5 mega-menu__column-item">
+        <li class="v-stack justify-items-start gap-5 mega-menu__column-item" style="--item-index: {{ forloop.index0 }}">
           <a href="{{ sub_link.url }}" class="h6 mega-menu__title-with-icon">
             {%- if menu_icon != blank -%}
               <img src="{{ menu_icon | image_url: width: 48 }}" 
@@ -56,7 +56,7 @@ Supported variables
                   {%- endif -%}
                 {%- endfor -%}
                 
-                <li class="mega-menu__sub-item">
+                <li class="mega-menu__sub-item" style="--sub-item-index: {{ forloop.index0 }}">
                   <a href="{{ sub_sub_link.url }}" class="link-faded mega-menu__link-with-icon">
                     {%- if sub_menu_icon != blank -%}
                       <img src="{{ sub_menu_icon | image_url: width: 40 }}" 
@@ -114,7 +114,7 @@ Supported variables
     opacity: 1;
   }
 
-  /* Animation styles */
+  /* Animation keyframes */
   @keyframes fadeInUp {
     from {
       opacity: 0;
@@ -126,92 +126,46 @@ Supported variables
     }
   }
 
-  @keyframes fadeIn {
+  @keyframes fadeInScale {
     from {
       opacity: 0;
+      transform: scale(0.95);
     }
     to {
       opacity: 1;
+      transform: scale(1);
     }
   }
 
-  /* Initial state - hidden */
-  .mega-menu--animated .mega-menu__column-item {
+  /* Initial hidden state */
+  .mega-menu__column-item,
+  .mega-menu__sub-item,
+  .mega-menu__promo-animated {
     opacity: 0;
+  }
+
+  /* Trigger animations on hover - using :hover on parent navigation item */
+  .mega-menu:hover .mega-menu__column-item {
     animation: fadeInUp 0.4s ease forwards;
+    animation-delay: calc(var(--item-index) * 0.05s);
   }
 
-  .mega-menu--animated .mega-menu__sub-item {
-    opacity: 0;
+  .mega-menu:hover .mega-menu__sub-item {
     animation: fadeInUp 0.3s ease forwards;
+    animation-delay: calc(0.1s + var(--sub-item-index) * 0.05s);
   }
 
-  .mega-menu--animated .mega-menu__promo-animated {
+  .mega-menu:hover .mega-menu__promo-animated {
+    animation: fadeInScale 0.5s ease forwards;
+    animation-delay: 0.15s;
+  }
+
+  /* Reset animation when not hovering */
+  .mega-menu:not(:hover) .mega-menu__column-item,
+  .mega-menu:not(:hover) .mega-menu__sub-item,
+  .mega-menu:not(:hover) .mega-menu__promo-animated {
+    animation: none;
     opacity: 0;
-    animation: fadeIn 0.5s ease forwards;
-  }
-
-  /* Staggered animation delays for columns */
-  .mega-menu--animated .mega-menu__column-item:nth-child(1) {
-    animation-delay: 0.05s;
-  }
-
-  .mega-menu--animated .mega-menu__column-item:nth-child(2) {
-    animation-delay: 0.1s;
-  }
-
-  .mega-menu--animated .mega-menu__column-item:nth-child(3) {
-    animation-delay: 0.15s;
-  }
-
-  .mega-menu--animated .mega-menu__column-item:nth-child(4) {
-    animation-delay: 0.2s;
-  }
-
-  .mega-menu--animated .mega-menu__column-item:nth-child(5) {
-    animation-delay: 0.25s;
-  }
-
-  .mega-menu--animated .mega-menu__column-item:nth-child(6) {
-    animation-delay: 0.3s;
-  }
-
-  /* Staggered delays for sub-items */
-  .mega-menu--animated .mega-menu__sub-item:nth-child(1) {
-    animation-delay: 0.1s;
-  }
-
-  .mega-menu--animated .mega-menu__sub-item:nth-child(2) {
-    animation-delay: 0.15s;
-  }
-
-  .mega-menu--animated .mega-menu__sub-item:nth-child(3) {
-    animation-delay: 0.2s;
-  }
-
-  .mega-menu--animated .mega-menu__sub-item:nth-child(4) {
-    animation-delay: 0.25s;
-  }
-
-  .mega-menu--animated .mega-menu__sub-item:nth-child(5) {
-    animation-delay: 0.3s;
-  }
-
-  .mega-menu--animated .mega-menu__sub-item:nth-child(6) {
-    animation-delay: 0.35s;
-  }
-
-  .mega-menu--animated .mega-menu__sub-item:nth-child(7) {
-    animation-delay: 0.4s;
-  }
-
-  .mega-menu--animated .mega-menu__sub-item:nth-child(8) {
-    animation-delay: 0.45s;
-  }
-
-  /* Promo image animation delay */
-  .mega-menu--animated .mega-menu__promo-animated {
-    animation-delay: 0.2s;
   }
 
   /* Smooth hover effect on items */
@@ -221,5 +175,14 @@ Supported variables
 
   .mega-menu__link-with-icon:hover {
     transform: translateX(3px);
+  }
+
+  /* Image animation with zoom effect */
+  .mega-menu__promo-animated img {
+    transition: transform 0.3s ease;
+  }
+
+  .mega-menu:hover .mega-menu__promo-animated img {
+    transform: scale(1.05);
   }
 </style>
