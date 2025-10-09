@@ -1,6 +1,6 @@
 {%- comment -%}
 ----------------------------------------------------------------------------------------------------------------------
-MEGA MENU COMPONENT WITH ICONS
+MEGA MENU COMPONENT WITH ICONS AND ANIMATIONS
 ----------------------------------------------------------------------------------------------------------------------
 
 Render the mega-menu. The mega-menu is a kind of menu optimized for showing a large number of items into several
@@ -18,7 +18,7 @@ Supported variables
 {%- comment -%} Fetch all menu icons {%- endcomment -%}
 {%- assign menu_icons = shop.metaobjects.menu_icon.values -%}
 
-<div class="mega-menu {% if block.settings.images_position == 'left' %}mega-menu--reverse{% endif %}" {{ block.shopify_attributes }}>
+<div class="mega-menu mega-menu--animated {% if block.settings.images_position == 'left' %}mega-menu--reverse{% endif %}" {{ block.shopify_attributes }}>
   {%- if link.levels > 0 -%}
     <ul class="mega-menu__linklist unstyled-list">
       {%- for sub_link in link.links -%}
@@ -31,7 +31,7 @@ Supported variables
           {%- endif -%}
         {%- endfor -%}
         
-        <li class="v-stack justify-items-start gap-5">
+        <li class="v-stack justify-items-start gap-5 mega-menu__column-item">
           <a href="{{ sub_link.url }}" class="h6 mega-menu__title-with-icon">
             {%- if menu_icon != blank -%}
               <img src="{{ menu_icon | image_url: width: 48 }}" 
@@ -56,7 +56,7 @@ Supported variables
                   {%- endif -%}
                 {%- endfor -%}
                 
-                <li>
+                <li class="mega-menu__sub-item">
                   <a href="{{ sub_sub_link.url }}" class="link-faded mega-menu__link-with-icon">
                     {%- if sub_menu_icon != blank -%}
                       <img src="{{ sub_menu_icon | image_url: width: 40 }}" 
@@ -82,13 +82,14 @@ Supported variables
   {%- endcapture -%}
 
   {%- if mega_menu_content != blank -%}
-    <div class="mega-menu__promo">
+    <div class="mega-menu__promo mega-menu__promo-animated">
       {{- mega_menu_content -}}
     </div>
   {%- endif -%}
 </div>
 
 <style>
+  /* Base icon styles */
   .mega-menu__title-with-icon,
   .mega-menu__link-with-icon {
     display: inline-flex !important;
@@ -111,5 +112,114 @@ Supported variables
 
   .mega-menu__link-with-icon:hover .mega-menu__icon--small {
     opacity: 1;
+  }
+
+  /* Animation styles */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  /* Initial state - hidden */
+  .mega-menu--animated .mega-menu__column-item {
+    opacity: 0;
+    animation: fadeInUp 0.4s ease forwards;
+  }
+
+  .mega-menu--animated .mega-menu__sub-item {
+    opacity: 0;
+    animation: fadeInUp 0.3s ease forwards;
+  }
+
+  .mega-menu--animated .mega-menu__promo-animated {
+    opacity: 0;
+    animation: fadeIn 0.5s ease forwards;
+  }
+
+  /* Staggered animation delays for columns */
+  .mega-menu--animated .mega-menu__column-item:nth-child(1) {
+    animation-delay: 0.05s;
+  }
+
+  .mega-menu--animated .mega-menu__column-item:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  .mega-menu--animated .mega-menu__column-item:nth-child(3) {
+    animation-delay: 0.15s;
+  }
+
+  .mega-menu--animated .mega-menu__column-item:nth-child(4) {
+    animation-delay: 0.2s;
+  }
+
+  .mega-menu--animated .mega-menu__column-item:nth-child(5) {
+    animation-delay: 0.25s;
+  }
+
+  .mega-menu--animated .mega-menu__column-item:nth-child(6) {
+    animation-delay: 0.3s;
+  }
+
+  /* Staggered delays for sub-items */
+  .mega-menu--animated .mega-menu__sub-item:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+
+  .mega-menu--animated .mega-menu__sub-item:nth-child(2) {
+    animation-delay: 0.15s;
+  }
+
+  .mega-menu--animated .mega-menu__sub-item:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+
+  .mega-menu--animated .mega-menu__sub-item:nth-child(4) {
+    animation-delay: 0.25s;
+  }
+
+  .mega-menu--animated .mega-menu__sub-item:nth-child(5) {
+    animation-delay: 0.3s;
+  }
+
+  .mega-menu--animated .mega-menu__sub-item:nth-child(6) {
+    animation-delay: 0.35s;
+  }
+
+  .mega-menu--animated .mega-menu__sub-item:nth-child(7) {
+    animation-delay: 0.4s;
+  }
+
+  .mega-menu--animated .mega-menu__sub-item:nth-child(8) {
+    animation-delay: 0.45s;
+  }
+
+  /* Promo image animation delay */
+  .mega-menu--animated .mega-menu__promo-animated {
+    animation-delay: 0.2s;
+  }
+
+  /* Smooth hover effect on items */
+  .mega-menu__link-with-icon {
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+
+  .mega-menu__link-with-icon:hover {
+    transform: translateX(3px);
   }
 </style>
