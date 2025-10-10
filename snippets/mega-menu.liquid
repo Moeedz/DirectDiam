@@ -101,36 +101,65 @@ Supported variables
         if (parentNavItem) {
           let hoverTimeout;
           let exitTimeout;
+          let isHoveringParent = false;
+          let isHoveringMenu = false;
           
-          parentNavItem.addEventListener('mouseenter', function() {
-            // Clear any pending timeouts
+          // Function to show menu
+          function showMenu() {
             clearTimeout(hoverTimeout);
             clearTimeout(exitTimeout);
             
-            // Remove exiting class immediately
             menu.classList.remove('mega-menu--exiting');
             menu.classList.remove('mega-menu--hidden');
             
-            // Add visible class after a tiny delay
             hoverTimeout = setTimeout(() => {
               menu.classList.add('mega-menu--visible');
             }, 10);
-          });
+          }
           
-          parentNavItem.addEventListener('mouseleave', function() {
-            // Clear any pending timeouts
+          // Function to hide menu
+          function hideMenu() {
             clearTimeout(hoverTimeout);
             clearTimeout(exitTimeout);
             
-            // Remove visible and add exiting
             menu.classList.remove('mega-menu--visible');
             menu.classList.add('mega-menu--exiting');
             
-            // After animation, add hidden class to keep it invisible
             exitTimeout = setTimeout(() => {
               menu.classList.remove('mega-menu--exiting');
               menu.classList.add('mega-menu--hidden');
-            }, 300); // Match animation duration
+            }, 300);
+          }
+          
+          // Function to check if should hide
+          function checkAndHide() {
+            setTimeout(() => {
+              if (!isHoveringParent && !isHoveringMenu) {
+                hideMenu();
+              }
+            }, 50); // Small delay to ensure hover states are updated
+          }
+          
+          // Parent nav item events
+          parentNavItem.addEventListener('mouseenter', function() {
+            isHoveringParent = true;
+            showMenu();
+          });
+          
+          parentNavItem.addEventListener('mouseleave', function() {
+            isHoveringParent = false;
+            checkAndHide();
+          });
+          
+          // Mega menu events
+          menu.addEventListener('mouseenter', function() {
+            isHoveringMenu = true;
+            showMenu();
+          });
+          
+          menu.addEventListener('mouseleave', function() {
+            isHoveringMenu = false;
+            checkAndHide();
           });
         }
       });
@@ -258,7 +287,6 @@ Supported variables
   /* EXIT ANIMATIONS - when mega menu is closing */
   .mega-menu--exiting {
     animation: menuFadeOut 0.3s ease forwards;
-    pointer-events: none;
   }
 
   .mega-menu--exiting .mega-menu__column-item {
