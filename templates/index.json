@@ -514,6 +514,96 @@
         "border_thickness": 0,
         "lazy": true
       }
+    },
+    "ss_scrolling_images_PTWX3y": {
+      "type": "ss-scrolling-images",
+      "blocks": {
+        "image_4gt8Pb": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_aLFBLf": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_9yNByU": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_q8XANf": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_EpEMjX": {
+          "type": "image",
+          "settings": {
+            "url": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_4gt8Pb",
+        "image_aLFBLf",
+        "image_9yNByU",
+        "image_q8XANf",
+        "image_EpEMjX"
+      ],
+      "name": "SS - Scrolling images",
+      "settings": {
+        "heading": "<p>Companies Worked with Section</p>",
+        "heading_custom": true,
+        "heading_font": "poppins_n4",
+        "heading_size": 36,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 40,
+        "slider_gap": 10,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "image_width_desktop": 330,
+        "image_width_mobile": 190,
+        "image_height_desktop": 120,
+        "image_height_mobile": 80,
+        "image_radius": 10,
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 14,
+        "text_height": 130,
+        "text_padding": 10,
+        "text_radius": 8,
+        "text_mt": 30,
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "text_bg": "#ffffff",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
     }
   },
   "order": [
@@ -523,6 +613,7 @@
     "collection_list_YhxBEh",
     "rich_text_YyRcU7",
     "ss_featured_collection_tabs_hCXhec",
-    "ss_scrolling_images_7zEpGz"
+    "ss_scrolling_images_7zEpGz",
+    "ss_scrolling_images_PTWX3y"
   ]
 }
