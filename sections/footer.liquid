@@ -164,11 +164,13 @@
         <p class="heading text-subdued text-xxs">© {{ 'now' | date: '%Y' }} - {{ shop.name }} {{ powered_by_link }}</p>
 
         {%- if section.settings.show_payment_icons and shop.enabled_payment_types.size > 0 -%}
-          <div class="payment-methods">
-            {%- for type in shop.enabled_payment_types -%}
-              {{- type | payment_type_svg_tag -}}
-            {%- endfor -%}
-          </div>
+          <ul class="flex justify-center gap-y-2 flex-wrap" role="list">
+  {%- for type in shop.enabled_payment_types -%}
+    <li class="pl-1 pr-1">
+      {{- type | payment_type_svg_tag: class: 'payment-icon' -}}
+    </li>
+  {%- endfor -%}
+</ul>
         {%- endif -%}
       </div>
     </div>
