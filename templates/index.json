@@ -466,9 +466,10 @@
         "image_pXzyYD",
         "image_qb6imt"
       ],
+      "disabled": true,
       "custom_css": [
         ".slide-text-template--18776319131692__ss_scrolling_images_7zEpGz {display: none;}",
-        "@media screen and (max-width: 767px) {.scrolling-image-heading-template--18776319131692__ss_scrolling_images_7zEpGz p {font-size: 24px;}}"
+        "@media screen and (max-width: 767px) {.scrolling-image-heading-template--18776319131692__ss_scrolling_images_7zEpGz p {font-size: 24px; }}"
       ],
       "name": "SS - Scrolling images",
       "settings": {
