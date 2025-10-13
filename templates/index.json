@@ -478,9 +478,9 @@
       ],
       "name": "SS - Featured collection #17",
       "settings": {
-        "heading": "<h2>Matching Pair Diamonds</h2>",
+        "heading": "<p>MATCHING PAIR DIAMONDS</p>",
         "heading_custom": true,
-        "heading_font": "poppins_n4",
+        "heading_font": "montserrat_n4",
         "heading_size": 42,
         "heading_size_mobile": 26,
         "heading_height": 130,
