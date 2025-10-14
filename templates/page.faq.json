@@ -1,1 +1,171 @@
-{"sections":{"faq":{"type":"faq","blocks":{"category":{"type":"category","settings":{"title":"PEDIDOS Y PAGOS","icon":"none","icon_width":16}},"question-1":{"type":"question","settings":{"question":"<strong>¿Cuánto tardaré en recibir mi pedido?<\/strong>","answer":"<p>Todos los pedidos realizados antes de las 15:00 de la tarde se enviarán el mismo día laborable. Sin embargo, durante los periodos de rebajas y promociones, puede haber un ligero retraso en el envío de su pedido.<br\/><br\/>Visite nuestra página de Envíos <a href=\"\/pages\/envios\" title=\"Envíos\">aquí <\/a>para obtener más información sobre los plazos de envío.<\/p>"}},"question-2":{"type":"question","settings":{"question":"<strong>¿Cómo puedo recibir el código de descuento para mi primer pedido?<\/strong>","answer":"<p>Para todos los clientes de Meyme por primera vez, ofrecemos un código de descuento del 10%, que se enviará por correo electrónico una vez que se haya suscrito a nuestra Newsletter. Si no lo recibe, envíe un correo electrónico a shop@meymestore.com o póngase en contacto con nosotros a través del chat en vivo.<\/p>"}},"question-3":{"type":"question","settings":{"question":"<strong>He recibido un artículo defectuoso o incorrecto, ¿qué hago?<\/strong>","answer":"<p>Si crees que has recibido un artículo defectuoso o incorrecto, ponte en contacto con nosotros <a href=\"\/pages\/contacto\" title=\"Contacto\">aquí<\/a><\/p>"}},"question_BdHDEG":{"type":"question","settings":{"question":"<strong>¿Qué métodos de pago aceptan?<\/strong>","answer":"<p>Actualmente aceptamos los siguientes métodos de pago:<br\/>Visa, MasterCard, American Express, Maestro, iDEAL, Bancontact, Shop Pay, Apple Pay, Google Pay, PayPal, Amazon Pay, Bizum, Clearpay y Klarna.<\/p>"}},"category_V6gQWh":{"type":"category","settings":{"title":"ENVÍOS","icon":"none","icon_width":16}},"question_4qPggP":{"type":"question","settings":{"question":"<strong>¿Cuánto tarda el envío?<\/strong>","answer":"<p>Dado que los gastos de envío varían considerablemente en función del destino, consulte nuestra <a href=\"\/pages\/envios\" title=\"Envíos\">política de envíos<\/a> para conocer los plazos de envío estimados.<\/p>"}},"question_Jkf6xh":{"type":"question","settings":{"question":"<strong>¿Cómo puedo hacer el seguimiento de mi pedido?<\/strong>","answer":"<p>Cuando su pedido se envíe, recibirá un correo electrónico de la empresa de transporte con la información de seguimiento de su pedido.<\/p>"}},"question_gmdhUx":{"type":"question","settings":{"question":"<strong>¿Con qué empresa de mensajería se enviará mi pedido?<\/strong>","answer":"<p>Utilizamos diferentes empresas de mensajería para hacer llegar a los clientes sus pedidos de la forma más rápida y eficaz posible. Una vez enviado su pedido, recibirá un correo electrónico del transportista correspondiente. Así como cualquier información de seguimiento relevante que pueda necesitar.<br\/><br\/>Nuestros transportistas de envío son exclusivamente:<\/p><p>CTT: España y Portugal.<\/p><p>UPS: Resto de Europa y Estados Unidos.<\/p>"}},"category_xNGDcm":{"type":"category","settings":{"title":"cambios y devoluciones","icon":"none","icon_width":16}},"question_dQHLfQ":{"type":"question","settings":{"question":"<strong>Si no estoy satisfecha con mi compra, ¿Puedo devolverla\/cambiarla?<\/strong>","answer":"<p>Si no está satisfecha con su pedido reciente de Meyme. Estaremos encantados de aceptar cualquier artículo que esté en condiciones nuevas y que no haya sido usado, lavado o alterado.<br\/><br\/>Todas las devoluciones y cambios deben realizarse de acuerdo con las directrices de nuestra Política de cambios y devoluciones.<\/p>"}},"question_wC3AyP":{"type":"question","settings":{"question":"<strong>¿De cuanto tiempo dispongo para solicitar una devolución o un cambio?<\/strong>","answer":"<p>Dispones de 30 días desde la recepción del pedido para solicitar una devolución o un cambio.<\/p>"}},"question_EAJii3":{"type":"question","settings":{"question":"<strong>¿Cuál es el coste de la devolución?<\/strong>","answer":"<p>Los costes de transporte asumidos por el cliente relativos a la devolución de un pedido serán los siguientes:<\/p><p>3,95€ en España | 8,95€ Unión Europea y Reino Unido | 25€ fuera de Unión Europea.<\/p><p>Estos costes serán descontados del importe a devolver al medio de pago que utilizaste en el momento de la compra.<\/p>"}}},"block_order":["category","question-1","question-2","question-3","question_BdHDEG","category_V6gQWh","question_4qPggP","question_Jkf6xh","question_gmdhUx","category_xNGDcm","question_dQHLfQ","question_wC3AyP","question_EAJii3"],"settings":{"color_scheme":"","separate_section_with_border":true,"show_categories":false,"subheading":"Necesitas ayuda?","title":"FAQs","content":""}}},"order":["faq"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "faq": {
+      "type": "faq",
+      "blocks": {
+        "category": {
+          "type": "category",
+          "settings": {
+            "title": "OUR DIAMONDS AND JEWELRY",
+            "icon": "picto-star",
+            "icon_width": 16
+          }
+        },
+        "question-1": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What makes DirectDiam diamonds unique?</strong>",
+            "answer": "<p>DirectDiam specializes in fancy color and investment-grade diamonds, known for their brilliance, rarity, and ethical sourcing. Each piece is hand-selected and certified by leading gemological institutes for authenticity and quality.</p>"
+          }
+        },
+        "question-2": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Are your diamonds certified?</strong>",
+            "answer": "<p>Yes. Every diamond purchased from DirectDiam includes a certification from reputable laboratories such as <strong>GIA</strong>, <strong>IGI</strong>, or <strong>HRD</strong>, ensuring complete transparency about its characteristics.</p>"
+          }
+        },
+        "question-3": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Do you offer custom jewelry designs?</strong>",
+            "answer": "<p>Absolutely. Our designers can craft bespoke pieces tailored to your exact preferences — from engagement rings to statement necklaces. Simply share your vision, and we’ll make it a reality.</p>"
+          }
+        },
+        "question_BdHDEG": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Can I request additional images or videos of a diamond?</strong>",
+            "answer": "<p>Yes. Upon request, we can provide high-resolution images or 360° videos so you can view your diamond’s brilliance before making a purchase.</p>"
+          }
+        },
+        "category_V6gQWh": {
+          "type": "category",
+          "settings": {
+            "title": "ORDERS",
+            "icon": "picto-bag-handle",
+            "icon_width": 16
+          }
+        },
+        "question_4qPggP": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How can I place an order?</strong>",
+            "answer": "<p>You can easily place your order through our online store. Simply add your desired item to the cart and follow the secure checkout process.</p>"
+          }
+        },
+        "question_Jkf6xh": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Can I modify or cancel my order after placing it?</strong>",
+            "answer": "<p>Orders can be modified or canceled within <strong>24 hours</strong> of purchase, provided they haven’t been processed or shipped. For custom items, cancellations are not available once production begins.</p>"
+          }
+        },
+        "question_gmdhUx": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How will I know my order was successful?</strong>",
+            "answer": "<p>Once your order is confirmed, you’ll receive an email with your order details and a tracking number once it ships.</p>"
+          }
+        },
+        "category_xNGDcm": {
+          "type": "category",
+          "settings": {
+            "title": "SHIPPING",
+            "icon": "picto-delivery-truck",
+            "icon_width": 16
+          }
+        },
+        "question_dQHLfQ": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Do you ship internationally?</strong>",
+            "answer": "<p>Yes, we ship worldwide using trusted and insured couriers. Shipping times and fees may vary depending on your destination.</p>"
+          }
+        },
+        "question_wC3AyP": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How long does delivery take?</strong>",
+            "answer": "<p>For in-stock items, shipping usually takes <strong>3–5 business days</strong>. Custom or made-to-order pieces may take <strong>2–3 weeks</strong> to complete before shipping.</p>"
+          }
+        },
+        "question_EAJii3": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Are shipments insured?</strong>",
+            "answer": "<p>Yes, all DirectDiam shipments are fully <strong>insured</strong> until they reach your doorstep.</p>"
+          }
+        },
+        "category_RJ3Ce3": {
+          "type": "category",
+          "settings": {
+            "title": "PAYMENTS",
+            "icon": "picto-credit-card",
+            "icon_width": 16
+          }
+        },
+        "question_iLLR6h": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What payment methods do you accept?</strong>",
+            "answer": "<p>We accept all major credit and debit cards, <strong>PayPal</strong>, <strong>Shop Pay</strong>, and other secure payment gateways supported by Shopify.</p>"
+          }
+        },
+        "question_YiKkKi": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Is my payment information secure?</strong>",
+            "answer": "<p>Absolutely. All transactions are processed using <strong>encrypted, PCI-compliant systems</strong> to ensure your personal and financial data remains 100% safe.</p>"
+          }
+        },
+        "question_L7bdaJ": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Can I pay in installments?</strong>",
+            "answer": "<p>If available in your region, you can select <strong>Shop Pay Installments</strong> or similar options at checkout for flexible payment.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "category",
+        "question-1",
+        "question-2",
+        "question-3",
+        "question_BdHDEG",
+        "category_V6gQWh",
+        "question_4qPggP",
+        "question_Jkf6xh",
+        "question_gmdhUx",
+        "category_xNGDcm",
+        "question_dQHLfQ",
+        "question_wC3AyP",
+        "question_EAJii3",
+        "category_RJ3Ce3",
+        "question_iLLR6h",
+        "question_YiKkKi",
+        "question_L7bdaJ"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "",
+        "title": "FAQs",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "faq"
+  ]
+}
