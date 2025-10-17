@@ -829,20 +829,7 @@
         "image_4gt8Pb": {
           "type": "image",
           "settings": {
-            "url": "",
-            "text": ""
-          }
-        },
-        "image_aLFBLf": {
-          "type": "image",
-          "settings": {
-            "url": "",
-            "text": ""
-          }
-        },
-        "image_9yNByU": {
-          "type": "image",
-          "settings": {
+            "image": "shopify://shop_images/industry.jpg",
             "url": "",
             "text": ""
           }
@@ -850,13 +837,23 @@
         "image_q8XANf": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/IGI_180ae2a9-721f-4ee8-9d2b-c84ed94c1b49.avif",
             "url": "",
             "text": ""
           }
         },
-        "image_EpEMjX": {
+        "image_aLFBLf": {
           "type": "image",
           "settings": {
+            "image": "shopify://shop_images/ncdia_logo_1.avif",
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_9yNByU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/GIA.jpg",
             "url": "",
             "text": ""
           }
@@ -864,10 +861,9 @@
       },
       "block_order": [
         "image_4gt8Pb",
-        "image_aLFBLf",
-        "image_9yNByU",
         "image_q8XANf",
-        "image_EpEMjX"
+        "image_aLFBLf",
+        "image_9yNByU"
       ],
       "name": "SS - Scrolling images",
       "settings": {
@@ -883,9 +879,9 @@
         "slider_mt": 50,
         "slider_direction": "left",
         "pause_hover": false,
-        "image_width_desktop": 330,
+        "image_width_desktop": 320,
         "image_width_mobile": 190,
-        "image_height_desktop": 120,
+        "image_height_desktop": 150,
         "image_height_mobile": 80,
         "image_radius": 10,
         "text_custom": false,
