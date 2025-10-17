@@ -865,6 +865,9 @@
         "image_aLFBLf",
         "image_9yNByU"
       ],
+      "custom_css": [
+        "img {object-fit: contain;}"
+      ],
       "name": "SS - Scrolling images",
       "settings": {
         "heading": "<p>Companies Worked with Section</p>",
@@ -879,9 +882,9 @@
         "slider_mt": 50,
         "slider_direction": "left",
         "pause_hover": false,
-        "image_width_desktop": 320,
+        "image_width_desktop": 350,
         "image_width_mobile": 190,
-        "image_height_desktop": 150,
+        "image_height_desktop": 120,
         "image_height_mobile": 80,
         "image_radius": 10,
         "text_custom": false,
