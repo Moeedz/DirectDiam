@@ -75,7 +75,7 @@
           "settings": {
             "show_below_gallery": false,
             "icon": "none",
-            "title": "Product Description",
+            "title": "Description",
             "content": "{{ product.description }}",
             "liquid": "",
             "page": ""
