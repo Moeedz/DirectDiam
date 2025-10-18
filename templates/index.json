@@ -882,7 +882,7 @@
         "slider_mt": 50,
         "slider_direction": "left",
         "pause_hover": false,
-        "image_width_desktop": 350,
+        "image_width_desktop": 170,
         "image_width_mobile": 190,
         "image_height_desktop": 120,
         "image_height_mobile": 80,
