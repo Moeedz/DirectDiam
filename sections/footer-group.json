@@ -43,8 +43,8 @@
           "settings": {
             "title": "Newsletter",
             "content": "<p>Sign up to our newsletter to receive exclusive offers.</p>",
-            "button_background": "",
-            "button_text_color": ""
+            "button_background": "#1c1c1c",
+            "button_text_color": "#f8f8f8ff"
           }
         }
       },
