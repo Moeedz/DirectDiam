@@ -498,7 +498,7 @@
         ".section-header.justify-self-center.text-center {width: 100% !important; max-width: 100% !important; text-align: -webkit-left !important;}"
       ],
       "settings": {
-        "color_scheme": "",
+        "color_scheme": "scheme-3",
         "separate_section_with_border": false,
         "hide_product_information": false,
         "stack_products": false,
