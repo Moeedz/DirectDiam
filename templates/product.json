@@ -81,6 +81,17 @@
             "page": ""
           }
         },
+        "accordion_zyngFG": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Comments",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
         "share_buttons_AzrpcW": {
           "type": "share_buttons",
           "settings": {}
@@ -97,6 +108,7 @@
         "quantity_selector",
         "buy_buttons",
         "accordion_grFqeR",
+        "accordion_zyngFG",
         "share_buttons_AzrpcW"
       ],
       "settings": {
