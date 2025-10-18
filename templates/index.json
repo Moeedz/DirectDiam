@@ -96,15 +96,6 @@
     "ss_slider_2_TfqnAN": {
       "type": "ss-slider-2",
       "blocks": {
-        "slide_RnnDyp": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_6477eac8.jpg",
-            "title": "Orange Diamond",
-            "button": "Shop Now",
-            "url": "shopify://collections/orange"
-          }
-        },
         "slide_edCbNX": {
           "type": "slide",
           "settings": {
@@ -121,6 +112,15 @@
             "title": "Purple Diamonds",
             "button": "Shop Now",
             "url": ""
+          }
+        },
+        "slide_RnnDyp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_6477eac8.jpg",
+            "title": "Orange Diamond",
+            "button": "Shop Now",
+            "url": "shopify://collections/orange"
           }
         },
         "slide_AgtwzX": {
@@ -143,9 +143,9 @@
         }
       },
       "block_order": [
-        "slide_RnnDyp",
         "slide_edCbNX",
         "slide_4ExAQf",
+        "slide_RnnDyp",
         "slide_AgtwzX",
         "slide_hNBUgj"
       ],
