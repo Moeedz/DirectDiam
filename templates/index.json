@@ -117,7 +117,7 @@
         "slide_RnnDyp": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_6477eac8.jpg",
+            "image": "shopify://shop_images/orange.png",
             "title": "Orange Diamond",
             "button": "Shop Now",
             "url": "shopify://collections/orange"
@@ -130,6 +130,15 @@
             "title": "Red Diamonds",
             "button": "Shop Now",
             "url": ""
+          }
+        },
+        "slide_iUMLtD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Pink.png",
+            "title": "Pink Diamonds",
+            "button": "Shop Now",
+            "url": "shopify://collections/pink-diamond"
           }
         },
         "slide_hNBUgj": {
@@ -147,6 +156,7 @@
         "slide_4ExAQf",
         "slide_RnnDyp",
         "slide_AgtwzX",
+        "slide_iUMLtD",
         "slide_hNBUgj"
       ],
       "name": "SS - Slider #2",
