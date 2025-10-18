@@ -117,7 +117,7 @@
         "slide_RnnDyp": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/orange.png",
+            "image": "shopify://shop_images/orange_f590e042-5bca-4699-a7cf-57b1df643c1b.png",
             "title": "Orange Diamond",
             "button": "Shop Now",
             "url": "shopify://collections/orange"
