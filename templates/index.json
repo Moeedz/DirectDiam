@@ -844,6 +844,14 @@
             "text": ""
           }
         },
+        "image_LQ8zwU": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images.png",
+            "url": "",
+            "text": ""
+          }
+        },
         "image_q8XANf": {
           "type": "image",
           "settings": {
@@ -852,10 +860,26 @@
             "text": ""
           }
         },
+        "image_LVp7hH": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/purepng.com-fedex-logologobrand-logoiconslogos-251519939539h7rji.png",
+            "url": "",
+            "text": ""
+          }
+        },
         "image_aLFBLf": {
           "type": "image",
           "settings": {
             "image": "shopify://shop_images/ncdia_logo_1.avif",
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_kM6Rkk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/World-Federation-Diamond-Bourses-removebg-preview.png",
             "url": "",
             "text": ""
           }
@@ -871,8 +895,11 @@
       },
       "block_order": [
         "image_4gt8Pb",
+        "image_LQ8zwU",
         "image_q8XANf",
+        "image_LVp7hH",
         "image_aLFBLf",
+        "image_kM6Rkk",
         "image_9yNByU"
       ],
       "custom_css": [
@@ -887,7 +914,7 @@
         "heading_height": 130,
         "heading_align": "center",
         "slider_speed": 40,
-        "slider_gap": 10,
+        "slider_gap": 50,
         "slider_gap_mobile": 10,
         "slider_mt": 50,
         "slider_direction": "left",
