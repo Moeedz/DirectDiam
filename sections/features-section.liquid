@@ -10,10 +10,16 @@
   }
 
   .features-container {
-    max-width: 1400px;
+    max-width: {{ section.settings.section_width }}px;
     margin: 0 auto;
     padding: 0 20px;
   }
+  
+  {% if section.settings.full_width %}
+  .features-container {
+    max-width: 100%;
+  }
+  {% endif %}
 
   .features-grid {
     display: grid;
@@ -163,6 +169,24 @@
     {
       "type": "header",
       "content": "Layout Settings"
+    },
+    {
+      "type": "checkbox",
+      "id": "full_width",
+      "label": "Full Width Section",
+      "default": false,
+      "info": "Enable to make the section span the full width of the page"
+    },
+    {
+      "type": "range",
+      "id": "section_width",
+      "min": 800,
+      "max": 2000,
+      "step": 50,
+      "default": 1400,
+      "label": "Section Width",
+      "unit": "px",
+      "info": "Only applies when Full Width is disabled"
     },
     {
       "type": "range",
