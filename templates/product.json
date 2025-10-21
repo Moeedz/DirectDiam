@@ -223,7 +223,7 @@
         "columns_tablet": 2,
         "columns_mobile": 1,
         "gap_size": 30,
-        "background_color": "#ffffff",
+        "background_color": "#f8f8f8",
         "border_color": "#e5e5e5",
         "card_background": "#fafafa",
         "card_border_color": "#e5e5e5",
