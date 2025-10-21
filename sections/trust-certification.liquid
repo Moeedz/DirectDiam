@@ -99,6 +99,37 @@
   }
 
   @media (max-width: 768px) {
+    {% if section.settings.mobile_slider %}
+    .trust-grid {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      gap: 15px;
+      padding-bottom: 10px;
+      scrollbar-width: thin;
+      scrollbar-color: {{ section.settings.icon_color }} transparent;
+    }
+
+    .trust-grid::-webkit-scrollbar {
+      height: 6px;
+    }
+
+    .trust-grid::-webkit-scrollbar-track {
+      background: transparent;
+    }
+
+    .trust-grid::-webkit-scrollbar-thumb {
+      background: {{ section.settings.icon_color }};
+      border-radius: 10px;
+    }
+
+    .trust-item {
+      flex: 0 0 85%;
+      scroll-snap-align: center;
+      padding: 20px 15px;
+    }
+    {% else %}
     .trust-grid {
       grid-template-columns: repeat({{ section.settings.columns_mobile }}, 1fr);
       gap: 15px;
@@ -107,6 +138,7 @@
     .trust-item {
       padding: 20px 15px;
     }
+    {% endif %}
 
     .trust-icon {
       width: 45px;
@@ -286,6 +318,13 @@
       "step": 1,
       "default": 1,
       "label": "Columns on Mobile"
+    },
+    {
+      "type": "checkbox",
+      "id": "mobile_slider",
+      "label": "Enable Mobile Slider",
+      "default": true,
+      "info": "On mobile, items will be displayed in a horizontal scrollable slider"
     },
     {
       "type": "range",
