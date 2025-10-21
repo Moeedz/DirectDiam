@@ -426,6 +426,68 @@
         "section-width": 120
       }
     },
+    "features_section_baW8Uh": {
+      "type": "features-section",
+      "blocks": {
+        "feature_PeKP7T": {
+          "type": "feature",
+          "disabled": true,
+          "settings": {
+            "icon": "truck",
+            "title": "COMPLIMENTARY SHIPPING",
+            "description": "Enjoy complimentary shipping on all orders for a seamless shopping experience"
+          }
+        },
+        "feature_zh3x33": {
+          "type": "feature",
+          "settings": {
+            "icon": "badge",
+            "title": "EXPERT PERSONALIZED SERVICE",
+            "description": "Take your shipping journey to take next level with our dedicated client care team"
+          }
+        },
+        "feature_y9WbWF": {
+          "type": "feature",
+          "settings": {
+            "icon": "star",
+            "title": "SATISFACTION GUARANTEE",
+            "description": "Experience peace of mind with our 30-Day Return Policy and Lifetime Warranty"
+          }
+        },
+        "feature_pTVVBy": {
+          "type": "feature",
+          "settings": {
+            "icon": "credit-card",
+            "title": "Secure Checkout",
+            "description": "Shop with confidence using our encrypted, secure payment system"
+          }
+        }
+      },
+      "block_order": [
+        "feature_PeKP7T",
+        "feature_zh3x33",
+        "feature_y9WbWF",
+        "feature_pTVVBy"
+      ],
+      "name": "Features Section",
+      "settings": {
+        "full_width": false,
+        "section_width": 1800,
+        "columns_desktop": 3,
+        "columns_tablet": 2,
+        "columns_mobile": 1,
+        "background_color": "#ffffff",
+        "card_background": "#f7f7f7",
+        "border_radius": 8,
+        "icon_color": "#c9a961",
+        "title_color": "#000000",
+        "title_size": 14,
+        "description_color": "#666666",
+        "description_size": 14,
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    },
     "rich_text_Kr4BLb": {
       "type": "rich-text",
       "blocks": {
@@ -957,6 +1019,7 @@
     "collection_list_YhxBEh",
     "rich_text_YyRcU7",
     "ss_featured_collection_tabs_hCXhec",
+    "features_section_baW8Uh",
     "rich_text_Kr4BLb",
     "ss_featured_collection_tabs_4AzEqe",
     "ss_featured_collection_17_QWt6Km",
