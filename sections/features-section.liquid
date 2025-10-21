@@ -1,0 +1,383 @@
+{% comment %}
+  Features Section with customizable columns
+  Save this as: sections/features-section.liquid
+{% endcomment %}
+
+<style>
+  .features-section {
+    padding: {{ section.settings.padding_top }}px 0 {{ section.settings.padding_bottom }}px;
+    background-color: {{ section.settings.background_color }};
+  }
+
+  .features-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .features-grid {
+    display: grid;
+    grid-template-columns: repeat({{ section.settings.columns_desktop }}, 1fr);
+    gap: 30px;
+  }
+
+  .feature-item {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: {{ section.settings.card_background }};
+    border-radius: {{ section.settings.border_radius }}px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .feature-icon {
+    width: 60px;
+    height: 60px;
+    margin: 0 auto 20px;
+    color: {{ section.settings.icon_color }};
+  }
+
+  .feature-icon svg {
+    width: 100%;
+    height: 100%;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 1.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  .feature-title {
+    font-size: {{ section.settings.title_size }}px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: {{ section.settings.title_color }};
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .feature-description {
+    font-size: {{ section.settings.description_size }}px;
+    line-height: 1.6;
+    color: {{ section.settings.description_color }};
+    margin: 0;
+  }
+
+  @media (max-width: 1024px) {
+    .features-grid {
+      grid-template-columns: repeat({{ section.settings.columns_tablet }}, 1fr);
+    }
+  }
+
+  @media (max-width: 768px) {
+    .features-grid {
+      grid-template-columns: repeat({{ section.settings.columns_mobile }}, 1fr);
+      gap: 20px;
+    }
+
+    .feature-item {
+      padding: 30px 15px;
+    }
+
+    .feature-icon {
+      width: 50px;
+      height: 50px;
+    }
+  }
+</style>
+
+<section class="features-section">
+  <div class="features-container">
+    <div class="features-grid">
+      {% for block in section.blocks %}
+        <div class="feature-item" {{ block.shopify_attributes }}>
+          <div class="feature-icon">
+            {% case block.settings.icon %}
+              {% when 'truck' %}
+                <svg viewBox="0 0 24 24">
+                  <path d="M16 3h4a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2h-1" />
+                  <path d="M16 16H3V5a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v11Z" />
+                  <circle cx="7.5" cy="19" r="2.5" />
+                  <circle cx="17.5" cy="19" r="2.5" />
+                </svg>
+              {% when 'badge' %}
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="8" r="6" />
+                  <path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" />
+                </svg>
+              {% when 'star' %}
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+                </svg>
+              {% when 'credit-card' %}
+                <svg viewBox="0 0 24 24">
+                  <rect x="2" y="5" width="20" height="14" rx="2" />
+                  <line x1="2" y1="10" x2="22" y2="10" />
+                </svg>
+              {% when 'shield' %}
+                <svg viewBox="0 0 24 24">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                </svg>
+              {% when 'gift' %}
+                <svg viewBox="0 0 24 24">
+                  <polyline points="20 12 20 22 4 22 4 12" />
+                  <rect x="2" y="7" width="20" height="5" />
+                  <line x1="12" y1="22" x2="12" y2="7" />
+                  <path d="M12 7H7.5a2.5 2.5 0 0 1 0-5C11 2 12 7 12 7z" />
+                  <path d="M12 7h4.5a2.5 2.5 0 0 0 0-5C13 2 12 7 12 7z" />
+                </svg>
+              {% when 'clock' %}
+                <svg viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" />
+                  <polyline points="12 6 12 12 16 14" />
+                </svg>
+              {% when 'headphones' %}
+                <svg viewBox="0 0 24 24">
+                  <path d="M3 18v-6a9 9 0 0 1 18 0v6" />
+                  <path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3v5ZM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3v5Z" />
+                </svg>
+            {% endcase %}
+          </div>
+          
+          {% if block.settings.title != blank %}
+            <h3 class="feature-title">{{ block.settings.title }}</h3>
+          {% endif %}
+          
+          {% if block.settings.description != blank %}
+            <p class="feature-description">{{ block.settings.description }}</p>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% schema %}
+{
+  "name": "Features Section",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout Settings"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "default": 4,
+      "label": "Columns on Desktop"
+    },
+    {
+      "type": "range",
+      "id": "columns_tablet",
+      "min": 1,
+      "max": 4,
+      "step": 1,
+      "default": 2,
+      "label": "Columns on Tablet"
+    },
+    {
+      "type": "range",
+      "id": "columns_mobile",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "default": 1,
+      "label": "Columns on Mobile"
+    },
+    {
+      "type": "header",
+      "content": "Style Settings"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Section Background",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "card_background",
+      "label": "Card Background",
+      "default": "#f7f7f7"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "default": 8,
+      "label": "Card Border Radius",
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "icon_color",
+      "label": "Icon Color",
+      "default": "#c9a961"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title Color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 12,
+      "max": 24,
+      "step": 1,
+      "default": 14,
+      "label": "Title Size",
+      "unit": "px"
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description Color",
+      "default": "#666666"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "default": 14,
+      "label": "Description Size",
+      "unit": "px"
+    },
+    {
+      "type": "header",
+      "content": "Spacing"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 50,
+      "label": "Top Padding",
+      "unit": "px"
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "default": 50,
+      "label": "Bottom Padding",
+      "unit": "px"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "feature",
+      "name": "Feature",
+      "settings": [
+        {
+          "type": "select",
+          "id": "icon",
+          "label": "Icon",
+          "options": [
+            {
+              "value": "truck",
+              "label": "Truck (Shipping)"
+            },
+            {
+              "value": "badge",
+              "label": "Badge (Award)"
+            },
+            {
+              "value": "star",
+              "label": "Star (Rating)"
+            },
+            {
+              "value": "credit-card",
+              "label": "Credit Card (Payment)"
+            },
+            {
+              "value": "shield",
+              "label": "Shield (Security)"
+            },
+            {
+              "value": "gift",
+              "label": "Gift (Bonus)"
+            },
+            {
+              "value": "clock",
+              "label": "Clock (24/7)"
+            },
+            {
+              "value": "headphones",
+              "label": "Headphones (Support)"
+            }
+          ],
+          "default": "truck"
+        },
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Title",
+          "default": "Feature Title"
+        },
+        {
+          "type": "textarea",
+          "id": "description",
+          "label": "Description",
+          "default": "Add a description for your feature here"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Features Section",
+      "blocks": [
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "truck",
+            "title": "COMPLIMENTARY SHIPPING",
+            "description": "Enjoy complimentary shipping on all orders for a seamless shopping experience"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "badge",
+            "title": "EXPERT PERSONALIZED SERVICE",
+            "description": "Take your shipping journey to take next level with our dedicated client care team"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "star",
+            "title": "SATISFACTION GUARANTEE",
+            "description": "Experience peace of mind with our 30-Day Return Policy and Lifetime Warranty"
+          }
+        },
+        {
+          "type": "feature",
+          "settings": {
+            "icon": "credit-card",
+            "title": "INTEREST FREE INSTALLMENTS",
+            "description": "Use your favorite credit card to split your payment into smaller, bite-sized pieces for free."
+          }
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
