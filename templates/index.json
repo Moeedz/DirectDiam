@@ -469,6 +469,7 @@
         "feature_y9WbWF",
         "feature_pTVVBy"
       ],
+      "disabled": true,
       "name": "Features Section",
       "settings": {
         "full_width": false,
@@ -486,6 +487,66 @@
         "description_size": 14,
         "padding_top": 0,
         "padding_bottom": 50
+      }
+    },
+    "trust_badges_MXQUNK": {
+      "type": "trust-badges",
+      "blocks": {
+        "badge_8C3XV9": {
+          "type": "badge",
+          "settings": {
+            "icon": "shield",
+            "title": "100% Waterproof & Sweatproof"
+          }
+        },
+        "badge_gaArgV": {
+          "type": "badge",
+          "settings": {
+            "icon": "truck",
+            "title": "Free Shipping over $50 USD"
+          }
+        },
+        "badge_gBDUgq": {
+          "type": "badge",
+          "settings": {
+            "icon": "award",
+            "title": "Lifetime Color Guarantee"
+          }
+        },
+        "badge_j8NryL": {
+          "type": "badge",
+          "settings": {
+            "icon": "refresh",
+            "title": "Hassle-free 30 Day Returns"
+          }
+        },
+        "badge_F8FEPM": {
+          "type": "badge",
+          "settings": {
+            "icon": "credit-card",
+            "title": "Buy Now, Pay Later"
+          }
+        }
+      },
+      "block_order": [
+        "badge_8C3XV9",
+        "badge_gaArgV",
+        "badge_gBDUgq",
+        "badge_j8NryL",
+        "badge_F8FEPM"
+      ],
+      "name": "Trust Badges",
+      "settings": {
+        "gap": 40,
+        "padding_top": 0,
+        "padding_bottom": 30,
+        "show_arrows": true,
+        "icon_size": 50,
+        "icon_color": "#000000",
+        "title_size": 16,
+        "title_weight": "500",
+        "text_color": "#000000",
+        "background_color": "#ffffff"
       }
     },
     "rich_text_Kr4BLb": {
@@ -1020,6 +1081,7 @@
     "rich_text_YyRcU7",
     "ss_featured_collection_tabs_hCXhec",
     "features_section_baW8Uh",
+    "trust_badges_MXQUNK",
     "rich_text_Kr4BLb",
     "ss_featured_collection_tabs_4AzEqe",
     "ss_featured_collection_17_QWt6Km",
