@@ -48,6 +48,13 @@
             "answer": "<p>Yes, all of our certified diamonds and jewelry will arrive with their certificates. </p><p>Luxury Jewelry will arrive with Third party reliable Gemological Lab with fancy certificate include appraisal and photo of the actual piece</p>"
           }
         },
+        "question_RydAjn": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Do you have stones that don't appear online?</strong>",
+            "answer": "<p>Yes. We are constantly getting new diamonds every week since we are Fancy Diamonds Manufacturer however it takes a few days to photograph and upload them to our website.  Please feel free to ask us if you don't find what you're looking for online.</p>"
+          }
+        },
         "question-3": {
           "type": "question",
           "settings": {
@@ -60,6 +67,13 @@
           "settings": {
             "question": "<strong>What are Conflict Diamonds, Blood Diamonds, and how can I be sure you don't sell them?</strong>",
             "answer": "<p>Conflict diamonds, also known as “blood diamonds”, are sold by rebel and terrorist groups, primarily in central and West African nations.</p><p>We are at DirectDiam Fancy is a proud supporter of the Kimberley Process Certification Scheme (KPCS) and Have all the license to guarantees we only deal with 100% conflict-free diamonds.</p>"
+          }
+        },
+        "question_M3Cnap": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Are your stones natural, or are they treated or enhanced in any way?</strong>",
+            "answer": "<p>All of our diamonds are guaranteed 100% NATURAL EARTH MINED and have not been treated or enhanced in any way.</p>"
           }
         },
         "question_qPQymh": {
@@ -184,8 +198,10 @@
         "question_pWtTdt",
         "question-2",
         "question_cETdTJ",
+        "question_RydAjn",
         "question-3",
         "question_TPXeLU",
+        "question_M3Cnap",
         "question_qPQymh",
         "question_BdHDEG",
         "category_V6gQWh",
