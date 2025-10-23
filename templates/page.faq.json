@@ -27,6 +27,13 @@
             "answer": "<p>DirectDiam specializes in fancy color and investment-grade diamonds, known for their brilliance, rarity, and ethical sourcing. Each piece is hand-selected and certified by leading gemological institutes for authenticity and quality.</p>"
           }
         },
+        "question_pWtTdt": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Is DirectDiam Licensed Diamond Dealer</strong>",
+            "answer": "<p>Yes. We are Established on 1987 and running by second generation in family ,We also Diamonds Exchange Licensed members and WFDB -World Federation of Bourse members</p>"
+          }
+        },
         "question-2": {
           "type": "question",
           "settings": {
@@ -34,11 +41,32 @@
             "answer": "<p>Yes. Every diamond purchased from DirectDiam includes a certification from reputable laboratories such as <strong>GIA</strong>, <strong>IGI</strong>, or <strong>HRD</strong>, ensuring complete transparency about its characteristics.</p>"
           }
         },
+        "question_cETdTJ": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Will I receive the GIA certificate with my diamonds and/or jewelry?</strong>",
+            "answer": "<p>Yes, all of our certified diamonds and jewelry will arrive with their certificates. </p><p>Luxury Jewelry will arrive with Third party reliable Gemological Lab with fancy certificate include appraisal and photo of the actual piece</p>"
+          }
+        },
         "question-3": {
           "type": "question",
           "settings": {
             "question": "<strong>Do you offer custom jewelry designs?</strong>",
             "answer": "<p>Absolutely. Our designers can craft bespoke pieces tailored to your exact preferences — from engagement rings to statement necklaces. Simply share your vision, and we’ll make it a reality.</p>"
+          }
+        },
+        "question_TPXeLU": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What are Conflict Diamonds, Blood Diamonds, and how can I be sure you don't sell them?</strong>",
+            "answer": "<p>Conflict diamonds, also known as “blood diamonds”, are sold by rebel and terrorist groups, primarily in central and West African nations.</p><p>We are at DirectDiam Fancy is a proud supporter of the Kimberley Process Certification Scheme (KPCS) and Have all the license to guarantees we only deal with 100% conflict-free diamonds.</p>"
+          }
+        },
+        "question_qPQymh": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>Can I view the diamond before purchasing it?</strong>",
+            "answer": "<p>Yes. We offer viewing services in New York, Tel Aviv and Hong Kong and Belgium It is also possible to arrange a viewing of specific stones at a Malca Amit or Ferrari D2D viewing station in your area or to one of our associates' offices. Service fees apply and may not be available in all areas. Contact us for more information.</p>"
           }
         },
         "question_BdHDEG": {
@@ -85,6 +113,13 @@
             "icon_width": 16
           }
         },
+        "question_ChM7e9": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How long does it usually take to receive One of a kind jewelry?</strong>",
+            "answer": "<p>Jewelry manufacturing generally takes between 7 to 21 business days in our Boutique Factory and hand made by Specialist Professional Jewler to complete, whether it's a ring, bracelet, earrings, pendant, or necklace. shipping typically adds up to 5 business days, depending on your location. </p>"
+          }
+        },
         "question_dQHLfQ": {
           "type": "question",
           "settings": {
@@ -114,6 +149,13 @@
             "icon_width": 16
           }
         },
+        "question_kjE6Wa": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>What is the cost for an appraisal?</strong>",
+            "answer": "<p>For loose diamonds that are already GIA certified, you may receive a complimentary appraisal upon request from Third party Gemological Lab such as CGL</p>"
+          }
+        },
         "question_iLLR6h": {
           "type": "question",
           "settings": {
@@ -139,18 +181,24 @@
       "block_order": [
         "category",
         "question-1",
+        "question_pWtTdt",
         "question-2",
+        "question_cETdTJ",
         "question-3",
+        "question_TPXeLU",
+        "question_qPQymh",
         "question_BdHDEG",
         "category_V6gQWh",
         "question_4qPggP",
         "question_Jkf6xh",
         "question_gmdhUx",
         "category_xNGDcm",
+        "question_ChM7e9",
         "question_dQHLfQ",
         "question_wC3AyP",
         "question_EAJii3",
         "category_RJ3Ce3",
+        "question_kjE6Wa",
         "question_iLLR6h",
         "question_YiKkKi",
         "question_L7bdaJ"
