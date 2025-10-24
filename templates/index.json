@@ -49,7 +49,7 @@
       "settings": {
         "allow_transparent_header": false,
         "show_next_section_button": false,
-        "media_size": "lg",
+        "media_size": "fill",
         "show_initial_transition": true,
         "autoplay": true,
         "autoplay_pause_on_video": true,
