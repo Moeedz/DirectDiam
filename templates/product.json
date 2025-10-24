@@ -222,6 +222,7 @@
         "columns_desktop": 4,
         "columns_tablet": 2,
         "columns_mobile": 1,
+        "mobile_slider": true,
         "gap_size": 30,
         "background_color": "#f8f8f8",
         "border_color": "#e5e5e5",
@@ -306,6 +307,7 @@
         "slide_JPVQYT",
         "slide_BwzbbJ"
       ],
+      "disabled": true,
       "name": "SS - Testimonial #8",
       "settings": {
         "heading": "Our customers tell it better than we do!",
@@ -612,7 +614,7 @@
         ".section-header.justify-self-center.text-center {width: 100% !important; max-width: 100% !important; text-align: -webkit-left !important;}"
       ],
       "settings": {
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "separate_section_with_border": false,
         "hide_product_information": false,
         "stack_products": false,
