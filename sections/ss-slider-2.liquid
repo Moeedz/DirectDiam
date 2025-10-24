@@ -31,6 +31,7 @@
   assign slider_view_mobile = section.settings.slider_view_mobile
   assign slider_view = section.settings.slider_view
   assign slider_rotate = section.settings.slider_rotate
+  assign image_scale = section.settings.image_scale
 
   assign card_padding_vertical = section.settings.card_padding_vertical
   assign card_padding_vertical_mobile = section.settings.card_padding_vertical_mobile
@@ -192,9 +193,10 @@
   .slider-image-{{ section.id }} img,
   .slider-image-{{ section.id }} svg {
     display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: {{ image_scale }}%;
+    height: {{ image_scale }}%;
+    object-fit: contain;
+    object-position: center;
   }
 
   .slider-image-{{ section.id }} svg {
@@ -829,6 +831,17 @@
       "step": 0.1,
       "label": "Overlay",
       "default": 0.2
+    },
+    {
+      "type": "range",
+      "id": "image_scale",
+      "min": 50,
+      "max": 150,
+      "step": 5,
+      "unit": "%",
+      "label": "Image size",
+      "info": "Adjust the size of images to prevent cropping",
+      "default": 100
     },
     {
       "type": "header",
