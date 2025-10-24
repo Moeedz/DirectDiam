@@ -31,7 +31,6 @@
   assign slider_view_mobile = section.settings.slider_view_mobile
   assign slider_view = section.settings.slider_view
   assign slider_rotate = section.settings.slider_rotate
-  assign card_max_width = section.settings.card_max_width
 
   assign card_padding_vertical = section.settings.card_padding_vertical
   assign card_padding_vertical_mobile = section.settings.card_padding_vertical_mobile
@@ -516,19 +515,6 @@
   </style>
 {% endif %}
 
-{% comment %} CARD SIZE CONTROL {% endcomment %}
-<style>
-  .slider-slider-{{ section.id }} .slider-slide-{{ section.id }} {
-    width: {{ card_max_width | times: 0.75 | round: 0 }}px !important;
-  }
-
-  @media(min-width: 1024px) {
-    .slider-slider-{{ section.id }} .slider-slide-{{ section.id }} {
-      width: {{ card_max_width }}px !important;
-    }
-  }
-</style>
-
 {% comment %} PREVIEW {% endcomment %}
 <style>
   .slider-slider-{{ section.id }}.preview .swiper-wrapper {
@@ -843,17 +829,6 @@
       "step": 0.1,
       "label": "Overlay",
       "default": 0.2
-    },
-    {
-      "type": "range",
-      "id": "card_max_width",
-      "min": 200,
-      "max": 800,
-      "step": 20,
-      "unit": "px",
-      "label": "Card size",
-      "info": "Adjust the maximum width of each card to prevent edge cropping",
-      "default": 500
     },
     {
       "type": "header",
