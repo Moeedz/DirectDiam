@@ -168,7 +168,6 @@
     border: {{ card_border_thickness }}px solid {{ card_border_color }};
     overflow: hidden;
     text-decoration: none;
-    max-width: {{ card_max_width | times: 0.75 | round: 0 }}px;
   }
 
   .slider-image-{{ section.id }} {
@@ -382,10 +381,6 @@
       height: {{ arrow_icon_size }}px;
       width: {{ arrow_icon_size }}px;
     }
-
-    .slider-slide-{{ section.id }} {
-      max-width: {{ card_max_width }}px;
-    }
   }
 {%- endstyle -%}
 
@@ -520,6 +515,19 @@
     }
   </style>
 {% endif %}
+
+{% comment %} CARD SIZE CONTROL {% endcomment %}
+<style>
+  .slider-slider-{{ section.id }} .slider-slide-{{ section.id }} {
+    width: {{ card_max_width | times: 0.75 | round: 0 }}px !important;
+  }
+
+  @media(min-width: 1024px) {
+    .slider-slider-{{ section.id }} .slider-slide-{{ section.id }} {
+      width: {{ card_max_width }}px !important;
+    }
+  }
+</style>
 
 {% comment %} PREVIEW {% endcomment %}
 <style>
