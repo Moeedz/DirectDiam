@@ -161,7 +161,7 @@
       ],
       "name": "SS - Slider #2",
       "settings": {
-        "slider_view": 3,
+        "slider_view": 4,
         "slider_view_mobile": 1.5,
         "slider_rotate": 0,
         "card_padding_vertical": 24,
@@ -1081,11 +1081,11 @@
     "rich_text_YyRcU7",
     "ss_featured_collection_tabs_hCXhec",
     "features_section_baW8Uh",
+    "ss_scrolling_images_PTWX3y",
     "rich_text_Kr4BLb",
     "ss_featured_collection_tabs_4AzEqe",
     "ss_featured_collection_17_QWt6Km",
     "ss_scrolling_images_7zEpGz",
-    "ss_scrolling_images_PTWX3y",
     "trust_badges_MXQUNK"
   ]
 }
