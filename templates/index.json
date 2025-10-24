@@ -58,179 +58,6 @@
         "controls_color": "#ffffff"
       }
     },
-    "rich_text_iDUjbg": {
-      "type": "rich-text",
-      "blocks": {
-        "subheading_6dhdwP": {
-          "type": "subheading",
-          "settings": {
-            "text": "DirectDiam Best"
-          }
-        },
-        "heading_qranEJ": {
-          "type": "heading",
-          "settings": {
-            "text": "FANCY DIAMONDS",
-            "heading_tag": "h1"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_6dhdwP",
-        "heading_qranEJ"
-      ],
-      "custom_css": [
-        ".color-scheme.color-scheme--scheme-1.color-scheme--bg-54922f2e920ba8346f6dc0fba343d673.section-spacing {padding-top: 45px !important; padding-bottom: 25px !important;}",
-        "p.h1 {margin-top: 11px !important;}",
-        "p.h6 {font-size: 1rem !important; line-height: 1 !important;}"
-      ],
-      "name": "t:sections.rich_text.presets.rich_text.name",
-      "settings": {
-        "color_scheme": "",
-        "separate_section_with_border": false,
-        "content_width": "sm",
-        "text_position": "center",
-        "remove_vertical_spacing": false
-      }
-    },
-    "ss_slider_2_TfqnAN": {
-      "type": "ss-slider-2",
-      "blocks": {
-        "slide_edCbNX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_826ee479.jpg",
-            "title": "Blue Diamonds",
-            "button": "Shop Now",
-            "url": "shopify://collections/blue"
-          }
-        },
-        "slide_4ExAQf": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.04_724f3f59.jpg",
-            "title": "Purple Diamonds",
-            "button": "Shop Now",
-            "url": ""
-          }
-        },
-        "slide_RnnDyp": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/orange_f590e042-5bca-4699-a7cf-57b1df643c1b.png",
-            "title": "Orange Diamond",
-            "button": "Shop Now",
-            "url": "shopify://collections/orange"
-          }
-        },
-        "slide_AgtwzX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_c6024baf.jpg",
-            "title": "Red Diamonds",
-            "button": "Shop Now",
-            "url": ""
-          }
-        },
-        "slide_iUMLtD": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Pink.png",
-            "title": "Pink Diamonds",
-            "button": "Shop Now",
-            "url": "shopify://collections/pink-diamond"
-          }
-        },
-        "slide_hNBUgj": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_10f6e70f.jpg",
-            "title": "Green Diamonds",
-            "button": "Shop Now",
-            "url": ""
-          }
-        }
-      },
-      "block_order": [
-        "slide_edCbNX",
-        "slide_4ExAQf",
-        "slide_RnnDyp",
-        "slide_AgtwzX",
-        "slide_iUMLtD",
-        "slide_hNBUgj"
-      ],
-      "name": "SS - Slider #2",
-      "settings": {
-        "slider_view": 4,
-        "slider_view_mobile": 1.5,
-        "slider_rotate": 0,
-        "card_padding_vertical": 24,
-        "card_padding_vertical_mobile": 24,
-        "card_padding_horizontal": 40,
-        "card_padding_horizontal_mobile": 30,
-        "card_radius": 0,
-        "card_border_thickness": 0,
-        "card_shadow": true,
-        "card_ratio": "square",
-        "card_ratio_mobile": "square",
-        "card_overlay": 0,
-        "content_horizontal_position": "center",
-        "content_horizontal_position_mobile": "center",
-        "content_vertical_position": "end",
-        "content_vertical_position_mobile": "end",
-        "title_custom": true,
-        "title_font": "garamond_n4",
-        "title_size": 28,
-        "title_size_mobile": 28,
-        "title_height": 130,
-        "button_custom": true,
-        "button_font": "poppins_n4",
-        "button_size": 14,
-        "button_size_mobile": 14,
-        "button_height": 100,
-        "button_mt": 16,
-        "button_padding_vertical": 12,
-        "button_padding_horizontal": 20,
-        "button_radius": 0,
-        "button_border_thickness": 1,
-        "arrow_size": 50,
-        "arrow_size_mobile": 32,
-        "arrow_icon_size": 20,
-        "arrow_icon_size_mobile": 12,
-        "arrow_border_thickness": 0,
-        "arrow_show_desktop": true,
-        "arrow_show_mobile": true,
-        "title_color": "#000000",
-        "card_border_color": "rgba(0,0,0,0)",
-        "card_shadow_color": "rgba(0,0,0,0)",
-        "card_overlay_color": "#121212",
-        "button_color": "#ffffff",
-        "button_hover_color": "#121212",
-        "button_bg_color": "#000000",
-        "button_bg_hover_color": "#ffffff",
-        "button_border_color": "#000000",
-        "button_border_hover_color": "#000000",
-        "arrow_color": "#121212",
-        "arrow_hover_color": "#ffffff",
-        "arrow_bg_color": "#ffffff",
-        "arrow_bg_hover_color": "#121212",
-        "arrow_border_color": "#121212",
-        "arrow_border_hover_color": "#454545",
-        "background_color": "#ffffff",
-        "background_gradient": "",
-        "border_color": "#121212",
-        "margin_top": 0,
-        "margin_bottom": 0,
-        "padding_top": 36,
-        "padding_bottom": 0,
-        "padding_horizontal": 0,
-        "padding_horizontal_mobile": 0,
-        "full_width": true,
-        "content_width": 1200,
-        "border_thickness": 0,
-        "lazy": true
-      }
-    },
     "ss_scrolling_images_PTWX3y": {
       "type": "ss-scrolling-images",
       "blocks": {
@@ -343,6 +170,179 @@
         "padding_horizontal_mobile": 0,
         "full_width": true,
         "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "rich_text_iDUjbg": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_6dhdwP": {
+          "type": "subheading",
+          "settings": {
+            "text": "DirectDiam Best"
+          }
+        },
+        "heading_qranEJ": {
+          "type": "heading",
+          "settings": {
+            "text": "FANCY DIAMONDS",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_6dhdwP",
+        "heading_qranEJ"
+      ],
+      "custom_css": [
+        ".color-scheme.color-scheme--scheme-1.color-scheme--bg-54922f2e920ba8346f6dc0fba343d673.section-spacing {padding-top: 45px !important; padding-bottom: 25px !important;}",
+        "p.h1 {margin-top: 11px !important;}",
+        "p.h6 {font-size: 1rem !important; line-height: 1 !important;}"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "ss_slider_2_TfqnAN": {
+      "type": "ss-slider-2",
+      "blocks": {
+        "slide_edCbNX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_826ee479.jpg",
+            "title": "Blue Diamonds",
+            "button": "Shop Now",
+            "url": "shopify://collections/blue"
+          }
+        },
+        "slide_4ExAQf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.04_724f3f59.jpg",
+            "title": "Purple Diamonds",
+            "button": "Shop Now",
+            "url": ""
+          }
+        },
+        "slide_RnnDyp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/orange_f590e042-5bca-4699-a7cf-57b1df643c1b.png",
+            "title": "Orange Diamond",
+            "button": "Shop Now",
+            "url": "shopify://collections/orange"
+          }
+        },
+        "slide_AgtwzX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_c6024baf.jpg",
+            "title": "Red Diamonds",
+            "button": "Shop Now",
+            "url": ""
+          }
+        },
+        "slide_iUMLtD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Pink.png",
+            "title": "Pink Diamonds",
+            "button": "Shop Now",
+            "url": "shopify://collections/pink-diamond"
+          }
+        },
+        "slide_hNBUgj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_10f6e70f.jpg",
+            "title": "Green Diamonds",
+            "button": "Shop Now",
+            "url": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide_edCbNX",
+        "slide_4ExAQf",
+        "slide_RnnDyp",
+        "slide_AgtwzX",
+        "slide_iUMLtD",
+        "slide_hNBUgj"
+      ],
+      "name": "SS - Slider #2",
+      "settings": {
+        "slider_view": 3,
+        "slider_view_mobile": 1.5,
+        "slider_rotate": 0,
+        "card_padding_vertical": 24,
+        "card_padding_vertical_mobile": 24,
+        "card_padding_horizontal": 40,
+        "card_padding_horizontal_mobile": 30,
+        "card_radius": 0,
+        "card_border_thickness": 0,
+        "card_shadow": true,
+        "card_ratio": "square",
+        "card_ratio_mobile": "square",
+        "card_overlay": 0,
+        "content_horizontal_position": "center",
+        "content_horizontal_position_mobile": "center",
+        "content_vertical_position": "end",
+        "content_vertical_position_mobile": "end",
+        "title_custom": true,
+        "title_font": "garamond_n4",
+        "title_size": 28,
+        "title_size_mobile": 28,
+        "title_height": 130,
+        "button_custom": true,
+        "button_font": "poppins_n4",
+        "button_size": 14,
+        "button_size_mobile": 14,
+        "button_height": 100,
+        "button_mt": 16,
+        "button_padding_vertical": 12,
+        "button_padding_horizontal": 20,
+        "button_radius": 0,
+        "button_border_thickness": 1,
+        "arrow_size": 50,
+        "arrow_size_mobile": 32,
+        "arrow_icon_size": 20,
+        "arrow_icon_size_mobile": 12,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "title_color": "#000000",
+        "card_border_color": "rgba(0,0,0,0)",
+        "card_shadow_color": "rgba(0,0,0,0)",
+        "card_overlay_color": "#121212",
+        "button_color": "#ffffff",
+        "button_hover_color": "#121212",
+        "button_bg_color": "#000000",
+        "button_bg_hover_color": "#ffffff",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "arrow_color": "#121212",
+        "arrow_hover_color": "#ffffff",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#121212",
+        "arrow_border_color": "#121212",
+        "arrow_border_hover_color": "#454545",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#121212",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 0,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 1200,
         "border_thickness": 0,
         "lazy": true
       }
