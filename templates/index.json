@@ -230,6 +230,15 @@
             "url": ""
           }
         },
+        "slide_hNBUgj": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_10f6e70f.jpg",
+            "title": "Green Diamonds",
+            "button": "Shop Now",
+            "url": ""
+          }
+        },
         "slide_4ExAQf": {
           "type": "slide",
           "settings": {
@@ -256,24 +265,15 @@
             "button": "Shop Now",
             "url": "shopify://collections/pink-diamond"
           }
-        },
-        "slide_hNBUgj": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_10f6e70f.jpg",
-            "title": "Green Diamonds",
-            "button": "Shop Now",
-            "url": ""
-          }
         }
       },
       "block_order": [
         "slide_edCbNX",
         "slide_AgtwzX",
+        "slide_hNBUgj",
         "slide_4ExAQf",
         "slide_RnnDyp",
-        "slide_iUMLtD",
-        "slide_hNBUgj"
+        "slide_iUMLtD"
       ],
       "custom_css": [],
       "name": "SS - Slider #2",
