@@ -212,13 +212,13 @@
     "ss_slider_2_TfqnAN": {
       "type": "ss-slider-2",
       "blocks": {
-        "slide_edCbNX": {
+        "slide_iUMLtD": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_826ee479.jpg",
-            "title": "Blue Diamonds",
+            "image": "shopify://shop_images/Pink.png",
+            "title": "Pink Diamonds",
             "button": "Shop Now",
-            "url": "shopify://collections/blue"
+            "url": "shopify://collections/pink-diamond"
           }
         },
         "slide_AgtwzX": {
@@ -239,13 +239,13 @@
             "url": ""
           }
         },
-        "slide_hNBUgj": {
+        "slide_edCbNX": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_10f6e70f.jpg",
-            "title": "Green Diamonds",
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_826ee479.jpg",
+            "title": "Blue Diamonds",
             "button": "Shop Now",
-            "url": ""
+            "url": "shopify://collections/blue"
           }
         },
         "slide_RnnDyp": {
@@ -257,23 +257,23 @@
             "url": "shopify://collections/orange"
           }
         },
-        "slide_iUMLtD": {
+        "slide_hNBUgj": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/Pink.png",
-            "title": "Pink Diamonds",
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_10f6e70f.jpg",
+            "title": "Green Diamonds",
             "button": "Shop Now",
-            "url": "shopify://collections/pink-diamond"
+            "url": ""
           }
         }
       },
       "block_order": [
-        "slide_edCbNX",
+        "slide_iUMLtD",
         "slide_AgtwzX",
         "slide_4ExAQf",
-        "slide_hNBUgj",
+        "slide_edCbNX",
         "slide_RnnDyp",
-        "slide_iUMLtD"
+        "slide_hNBUgj"
       ],
       "custom_css": [],
       "name": "SS - Slider #2",
