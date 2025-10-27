@@ -132,7 +132,7 @@
         "image_hdpQgh": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/industry.jpg",
+            "image": "shopify://shop_images/industry-removebg-preview.png",
             "url": "",
             "text": ""
           }
@@ -140,7 +140,7 @@
         "image_Czgwxy": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/images.png",
+            "image": "shopify://shop_images/images__1_-removebg-preview.png",
             "url": "",
             "text": ""
           }
@@ -148,7 +148,7 @@
         "image_PtUrgg": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/IGI_180ae2a9-721f-4ee8-9d2b-c84ed94c1b49_1.jpg",
+            "image": "shopify://shop_images/IGI_180ae2a9-721f-4ee8-9d2b-c84ed94c1b49_1-removebg-preview.png",
             "url": "",
             "text": ""
           }
@@ -164,7 +164,7 @@
         "image_UH6cQm": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/ncdia_logo_1.avif",
+            "image": "shopify://shop_images/ncdia_logo_1__1_-removebg-preview.png",
             "url": "",
             "text": ""
           }
@@ -180,7 +180,7 @@
         "image_9Vwb9E": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/GIA.jpg",
+            "image": "shopify://shop_images/GIA-removebg-preview.png",
             "url": "",
             "text": ""
           }
@@ -226,8 +226,8 @@
         "text_mt": 30,
         "heading_color": "#000000",
         "text_color": "#000000",
-        "text_bg": "#FFFFFF",
-        "background_color": "#ffffff",
+        "text_bg": "#ffffff",
+        "background_color": "#f8f8f8",
         "background_gradient": "",
         "border_color": "#000000",
         "margin_top": 0,
