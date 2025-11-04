@@ -1059,6 +1059,7 @@
         "badge_j8NryL",
         "badge_F8FEPM"
       ],
+      "disabled": true,
       "name": "Trust Badges",
       "settings": {
         "gap": 40,
