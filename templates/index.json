@@ -227,7 +227,7 @@
             "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_c6024baf.jpg",
             "title": "Red Diamonds",
             "button": "Shop Now",
-            "url": ""
+            "url": "shopify://collections/all-color-diamonds"
           }
         },
         "slide_4ExAQf": {
@@ -236,7 +236,7 @@
             "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.04_724f3f59.jpg",
             "title": "Purple Diamonds",
             "button": "Shop Now",
-            "url": ""
+            "url": "shopify://collections/purple"
           }
         },
         "slide_edCbNX": {
@@ -263,7 +263,7 @@
             "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_10f6e70f.jpg",
             "title": "Green Diamonds",
             "button": "Shop Now",
-            "url": ""
+            "url": "shopify://collections/green"
           }
         }
       },
@@ -379,7 +379,7 @@
             "subheading": "Discover our exclusive one-of-a-kind jewelry, meticulously crafted to showcase the rare beauty of each individual diamond.",
             "title": "One Of A Kind Jewelry",
             "button_text": "Shop Now",
-            "button_link": "shopify://collections/all-color-diamonds",
+            "button_link": "shopify://pages/one-of-a-kind-jewelry",
             "button_style": "solid",
             "overlay_color": "#000000",
             "overlay_opacity": 0
@@ -396,7 +396,7 @@
             "subheading": "Exceptional investment-grade diamonds, expertly curated for their superior quality, rarity, and enduring long-term value.",
             "title": "Investment Grade Diamonds",
             "button_text": "Shop Now",
-            "button_link": "",
+            "button_link": "shopify://collections/investment-grade-diamonds",
             "button_style": "solid",
             "overlay_color": "#000000",
             "overlay_opacity": 0
