@@ -239,15 +239,6 @@
             "url": "shopify://collections/pink-diamond"
           }
         },
-        "slide_4ExAQf": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.04_724f3f59.jpg",
-            "title": "Purple Diamonds",
-            "button": "Shop Now",
-            "url": "shopify://collections/purple"
-          }
-        },
         "slide_hNBUgj": {
           "type": "slide",
           "settings": {
@@ -255,6 +246,15 @@
             "title": "Green Diamonds",
             "button": "Shop Now",
             "url": "shopify://collections/green"
+          }
+        },
+        "slide_4ExAQf": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.04_724f3f59.jpg",
+            "title": "Purple Diamonds",
+            "button": "Shop Now",
+            "url": "shopify://collections/purple"
           }
         },
         "slide_edCbNX": {
@@ -279,8 +279,8 @@
       "block_order": [
         "slide_AgtwzX",
         "slide_iUMLtD",
-        "slide_4ExAQf",
         "slide_hNBUgj",
+        "slide_4ExAQf",
         "slide_edCbNX",
         "slide_RnnDyp"
       ],
