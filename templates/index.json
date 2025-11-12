@@ -240,15 +240,6 @@
             "url": "shopify://collections/all-color-diamonds"
           }
         },
-        "slide_iUMLtD": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/Pink.png",
-            "title": "Pink Diamonds",
-            "button": "Shop Now",
-            "url": "shopify://collections/pink-diamond"
-          }
-        },
         "slide_4ExAQf": {
           "type": "slide",
           "settings": {
@@ -256,6 +247,15 @@
             "title": "Purple Diamonds",
             "button": "Shop Now",
             "url": "shopify://collections/purple"
+          }
+        },
+        "slide_iUMLtD": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/Pink.png",
+            "title": "Pink Diamonds",
+            "button": "Shop Now",
+            "url": "shopify://collections/pink-diamond"
           }
         },
         "slide_edCbNX": {
@@ -288,8 +288,8 @@
       },
       "block_order": [
         "slide_AgtwzX",
-        "slide_iUMLtD",
         "slide_4ExAQf",
+        "slide_iUMLtD",
         "slide_edCbNX",
         "slide_RnnDyp",
         "slide_hNBUgj"
