@@ -77,6 +77,14 @@
             "text": ""
           }
         },
+        "image_U3WcTa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WDC-Logo-Blue-RGB.svg",
+            "url": "",
+            "text": ""
+          }
+        },
         "image_q8XANf": {
           "type": "image",
           "settings": {
@@ -121,6 +129,7 @@
       "block_order": [
         "image_4gt8Pb",
         "image_LQ8zwU",
+        "image_U3WcTa",
         "image_q8XANf",
         "image_LVp7hH",
         "image_aLFBLf",
