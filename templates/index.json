@@ -257,15 +257,6 @@
             "url": "shopify://collections/blue"
           }
         },
-        "slide_RnnDyp": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/orange_f590e042-5bca-4699-a7cf-57b1df643c1b.png",
-            "title": "Orange Diamond",
-            "button": "Shop Now",
-            "url": "shopify://collections/orange"
-          }
-        },
         "slide_hNBUgj": {
           "type": "slide",
           "settings": {
@@ -274,6 +265,15 @@
             "button": "Shop Now",
             "url": "shopify://collections/green"
           }
+        },
+        "slide_RnnDyp": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/orange_f590e042-5bca-4699-a7cf-57b1df643c1b.png",
+            "title": "Orange Diamond",
+            "button": "Shop Now",
+            "url": "shopify://collections/orange"
+          }
         }
       },
       "block_order": [
@@ -281,8 +281,8 @@
         "slide_iUMLtD",
         "slide_4ExAQf",
         "slide_edCbNX",
-        "slide_RnnDyp",
-        "slide_hNBUgj"
+        "slide_hNBUgj",
+        "slide_RnnDyp"
       ],
       "custom_css": [],
       "name": "SS - Slider #2",
