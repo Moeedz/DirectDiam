@@ -248,15 +248,6 @@
             "url": "shopify://collections/purple"
           }
         },
-        "slide_edCbNX": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_826ee479.jpg",
-            "title": "Blue Diamonds",
-            "button": "Shop Now",
-            "url": "shopify://collections/blue"
-          }
-        },
         "slide_hNBUgj": {
           "type": "slide",
           "settings": {
@@ -264,6 +255,15 @@
             "title": "Green Diamonds",
             "button": "Shop Now",
             "url": "shopify://collections/green"
+          }
+        },
+        "slide_edCbNX": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify://shop_images/WhatsApp_Image_2025-10-09_at_23.53.03_826ee479.jpg",
+            "title": "Blue Diamonds",
+            "button": "Shop Now",
+            "url": "shopify://collections/blue"
           }
         },
         "slide_RnnDyp": {
@@ -280,8 +280,8 @@
         "slide_AgtwzX",
         "slide_iUMLtD",
         "slide_4ExAQf",
-        "slide_edCbNX",
         "slide_hNBUgj",
+        "slide_edCbNX",
         "slide_RnnDyp"
       ],
       "custom_css": [],
