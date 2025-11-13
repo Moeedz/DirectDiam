@@ -30,7 +30,7 @@
     "stagger_products_apparition": true,
     "round_color_swatches": false,
     "color_swatch_config": "orange:#F1833E\nblue:#024ABB\nred:#FF0C0C\nbrown:#C88857\nprint:print.png\nprintred:printred.png\ncolors:colors.png\nblackwhite:blackwhite.png\nteja:#CD7455\nbleu:#024ABB\nstripe:stripe.jpg",
-    "product_image_aspect_ratio": "natural",
+    "product_image_aspect_ratio": "square",
     "show_secondary_image": false,
     "product_card_text_font": "heading",
     "show_product_rating": false,
