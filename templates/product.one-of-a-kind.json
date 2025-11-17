@@ -1,0 +1,781 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-product",
+      "blocks": {
+        "vendor": {
+          "type": "vendor",
+          "disabled": true,
+          "settings": {}
+        },
+        "title": {
+          "type": "title",
+          "settings": {
+            "heading_tag": "h3"
+          }
+        },
+        "price": {
+          "type": "price",
+          "settings": {
+            "show_taxes_notice": false
+          }
+        },
+        "payment_terms": {
+          "type": "payment_terms",
+          "settings": {}
+        },
+        "separator": {
+          "type": "separator",
+          "disabled": true,
+          "settings": {}
+        },
+        "liquid_tmzkAX": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "<table rel=\"product-data-table\" class=\"overflow-auto\">\n    <tbody><tr class=\"\">\n      <td class=\"w-1/2\">Stock number</td>\n      <td class=\"w-1/2\" data-value=\"reference\">{{ product.metafields.custom.stock_number }}</td>\n    </tr>\n    <tr class=\"\">\n      <td class=\"w-1/2\">Weight</td>\n      <td class=\"w-1/2\" data-value=\"langerman-color\">{{ product.metafields.custom.weight }} ct</td>\n    </tr>\n    <tr>\n      <td>Shape</td>\n      <td data-value=\"lab-color\"><div class=\"flex items-center gap-x-1\">\n            <div class=\"flex-1\">{{ product.metafields.custom.shape}}</div>\n            \n          </div></td>\n    </tr>\n    <tr>\n      <td>Color</td>\n      <td data-value=\"certificate\">{{ product.metafields.custom.color}}</td>\n    </tr>\n    <tr>\n      <td>Clarity</td>\n      <td data-value=\"carat\">{{ product.metafields.custom.clarity}}</td>\n    </tr>\n    <tr>\n      <td>Symmetry</td>\n      <td data-value=\"shape\">{{ product.metafields.custom.symmetry}}\n</td>\n    </tr>\n    <tr>\n      <td>Polish</td>\n      <td data-value=\"cut\">{{ product.metafields.custom.polish }}\n</td>\n    </tr>\n    <tr>\n      <td>Measurements</td>\n      <td data-value=\"clarity\">{{ product.metafields.custom.measurements }}\n</td>\n    </tr>\n<tr>\n      <td>Depth</td>\n      <td data-value=\"clarity\">{{ product.metafields.custom.depth }}\n</td>\n    </tr>\n<tr>\n      <td>Table</td>\n      <td data-value=\"clarity\">{{ product.metafields.custom.table }}\n</td>\n    </tr>\n<tr>\n      <td>Certificate number</td>\n      <td data-value=\"clarity\">{{ product.metafields.custom.certificate_number }}\n</td>\n    </tr>\n<tr>\n      <td>Fluorescence Intensity</td>\n      <td data-value=\"clarity\">{{ product.metafields.custom.fluorescence }}\n</td>\n    </tr>\n  </tbody></table>\n\n<style>\ntable[rel=product-data-table] {\n    border-width: 0;\n}\n.overflow-auto {\n    overflow: auto;\n}\ntable {\n    --tw-border-opacity: 1;\n    border-color: rgb(158 158 158 / 1);\n    border-radius: 0;\n    border-width: 1px;\n    overflow: hidden;\n    width: 100%;\n}\ntable[rel=product-data-table] td {\n    --tw-border-opacity: 1;\n    --tw-text-opacity: 1;\n    border-color: rgb(216 216 216 / 1);\n    border-width: 0 0 1px;\n    color: rgb(0 0 0 / var(--tw-text-opacity));\n    font-size: .75rem;\n    padding: 0.450rem 0;\n    text-align: left;\n}\n.w-1\\/2 {\n    width: 50%;\n}\ntable[rel=product-data-table] td:nth-child(2n) {\n    color: rgb(96 96 96 / 1);\n}\n</style>"
+          }
+        },
+        "variant_picker": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch",
+            "variant_image_options": "",
+            "size_chart_page": ""
+          }
+        },
+        "quantity_selector": {
+          "type": "quantity_selector",
+          "disabled": true,
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_payment_button": false,
+            "show_gift_card_recipient": true,
+            "atc_button_background": "#1e1e1e",
+            "atc_button_text_color": "#ffffff",
+            "payment_button_background": "#c9a236",
+            "payment_button_text_color": "#ffffff"
+          }
+        },
+        "accordion_grFqeR": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Description",
+            "content": "{{ product.description }}",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "accordion_zyngFG": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Comments",
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "liquid": "",
+            "page": ""
+          }
+        },
+        "liquid_BeU7cf": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{% comment %}\n  PDF Download Button for Product Page - With ALL Images + Specifications\n  Add this as a Custom Liquid block in your product page template\n{% endcomment %}\n\n<div class=\"product-pdf-download\" style=\"margin: 20px 0;\">\n  <button id=\"download-pdf-btn\" class=\"btn\" style=\"\n    background-color: #000;\n    color: #fff;\n    padding: 12px 24px;\n    border: none;\n    cursor: pointer;\n    font-size: 14px;\n    font-weight: 600;\n    border-radius: 4px;\n    display: inline-flex;\n    align-items: center;\n    gap: 8px;\n  \">\n    <svg width=\"16\" height=\"16\" viewBox=\"0 0 16 16\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\">\n      <path d=\"M8 11L3 6H6V0H10V6H13L8 11Z\" fill=\"currentColor\"/>\n      <path d=\"M0 14H16V16H0V14Z\" fill=\"currentColor\"/>\n    </svg>\n    Download Product PDF\n  </button>\n</div>\n\n<script src=\"https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js\" integrity=\"sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==\" crossorigin=\"anonymous\" referrerpolicy=\"no-referrer\"></script>\n\n<script>\nwindow.addEventListener('load', function() {\n  \n  var productData = {\n    title: {{ product.title | json }},\n    description: {{ product.description | strip_html | json }},\n    price: {{ product.price | money | json }},\n    comparePrice: {{ product.compare_at_price | money | json }},\n    vendor: {{ product.vendor | json }},\n    type: {{ product.type | json }},\n    sku: {{ product.selected_or_first_available_variant.sku | json }},\n    weight: '{{ product.selected_or_first_available_variant.weight | weight_with_unit }}',\n    images: [\n      {% for image in product.images %}\n        {{ image | image_url: width: 800 | json }}{% unless forloop.last %},{% endunless %}\n      {% endfor %}\n    ],\n    tags: {{ product.tags | json }},\n    available: {{ product.available | json }},\n    specifications: {\n      stockNumber: {{ product.metafields.custom.stock_number | json }},\n      weightCt: {{ product.metafields.custom.weight | json }},\n      shape: {{ product.metafields.custom.shape | json }},\n      color: {{ product.metafields.custom.color | json }},\n      clarity: {{ product.metafields.custom.clarity | json }},\n      symmetry: {{ product.metafields.custom.symmetry | json }},\n      polish: {{ product.metafields.custom.polish | json }},\n      measurements: {{ product.metafields.custom.measurements | json }},\n      depth: {{ product.metafields.custom.depth | json }},\n      table: {{ product.metafields.custom.table | json }},\n      certificateNumber: {{ product.metafields.custom.certificate_number | json }},\n      fluorescence: {{ product.metafields.custom.fluorescence | json }}\n    }\n  };\n\n  // Function to load image and convert to base64\n  function loadImage(url) {\n    return new Promise(function(resolve, reject) {\n      var img = new Image();\n      img.crossOrigin = 'Anonymous';\n      \n      img.onload = function() {\n        var canvas = document.createElement('canvas');\n        canvas.width = img.width;\n        canvas.height = img.height;\n        \n        var ctx = canvas.getContext('2d');\n        ctx.drawImage(img, 0, 0);\n        \n        try {\n          var dataURL = canvas.toDataURL('image/jpeg', 0.8);\n          resolve(dataURL);\n        } catch (e) {\n          reject(e);\n        }\n      };\n      \n      img.onerror = function() {\n        reject(new Error('Failed to load image'));\n      };\n      \n      img.src = url;\n    });\n  }\n\n  var button = document.getElementById('download-pdf-btn');\n  \n  if (!button) {\n    console.error('Button not found');\n    return;\n  }\n\n  button.addEventListener('click', async function(e) {\n    e.preventDefault();\n    \n    var originalHTML = this.innerHTML;\n    this.disabled = true;\n    this.innerHTML = 'Generating PDF...';\n\n    try {\n      if (typeof window.jspdf === 'undefined') {\n        alert('PDF library not loaded. Please refresh the page.');\n        button.disabled = false;\n        button.innerHTML = originalHTML;\n        return;\n      }\n\n      var jsPDF = window.jspdf.jsPDF;\n      var doc = new jsPDF();\n      \n      var yPosition = 20;\n      var pageWidth = doc.internal.pageSize.getWidth();\n      var margin = 20;\n      var contentWidth = pageWidth - (margin * 2);\n\n      // Store name\n      doc.setFontSize(10);\n      doc.setTextColor(100);\n      doc.text('{{ shop.name }}', margin, yPosition);\n      yPosition += 15;\n\n      // Product Title\n      doc.setFontSize(18);\n      doc.setTextColor(0);\n      doc.setFont(undefined, 'bold');\n      var titleLines = doc.splitTextToSize(productData.title, contentWidth);\n      doc.text(titleLines, margin, yPosition);\n      yPosition += (titleLines.length * 7) + 10;\n\n      // Line separator\n      doc.setDrawColor(200);\n      doc.line(margin, yPosition, pageWidth - margin, yPosition);\n      yPosition += 15;\n\n      // Add ALL Product Images\n      if (productData.images && productData.images.length > 0) {\n        doc.setFontSize(14);\n        doc.setFont(undefined, 'bold');\n        doc.text('Product Images', margin, yPosition);\n        yPosition += 10;\n\n        var imgWidth = 70;\n        var imgHeight = 70;\n        var imgSpacing = 5;\n        var imagesPerRow = 2;\n        var xPosition = margin;\n        var imageCount = 0;\n\n        for (var idx = 0; idx < productData.images.length; idx++) {\n          try {\n            var imageData = await loadImage(productData.images[idx]);\n            \n            // Check if we need to move to next row\n            if (imageCount > 0 && imageCount % imagesPerRow === 0) {\n              xPosition = margin;\n              yPosition += imgHeight + imgSpacing;\n            }\n            \n            // Check if we need a new page\n            if (yPosition + imgHeight > 270) {\n              doc.addPage();\n              yPosition = 20;\n              xPosition = margin;\n            }\n            \n            // Add image\n            doc.addImage(imageData, 'JPEG', xPosition, yPosition, imgWidth, imgHeight);\n            \n            // Move x position for next image in row\n            xPosition += imgWidth + imgSpacing;\n            imageCount++;\n            \n          } catch (imgError) {\n            console.log('Could not load image ' + idx + ':', imgError);\n          }\n        }\n        \n        // Move y position to after all images\n        yPosition += imgHeight + 15;\n      }\n\n      // Check if need new page before specifications\n      if (yPosition > 200) {\n        doc.addPage();\n        yPosition = 20;\n      }\n\n      // Product Specifications Section\n      doc.setFontSize(14);\n      doc.setFont(undefined, 'bold');\n      doc.text('Product Specifications', margin, yPosition);\n      yPosition += 10;\n\n      // Draw specifications table\n      var specs = [\n        { label: 'Stock number', value: productData.specifications.stockNumber },\n        { label: 'Weight', value: productData.specifications.weightCt ? productData.specifications.weightCt + ' ct' : '' },\n        { label: 'Shape', value: productData.specifications.shape },\n        { label: 'Color', value: productData.specifications.color },\n        { label: 'Clarity', value: productData.specifications.clarity },\n        { label: 'Symmetry', value: productData.specifications.symmetry },\n        { label: 'Polish', value: productData.specifications.polish },\n        { label: 'Measurements', value: productData.specifications.measurements },\n        { label: 'Depth', value: productData.specifications.depth },\n        { label: 'Table', value: productData.specifications.table },\n        { label: 'Certificate number', value: productData.specifications.certificateNumber },\n        { label: 'Fluorescence Intensity', value: productData.specifications.fluorescence }\n      ];\n\n      doc.setFontSize(10);\n      var tableWidth = contentWidth;\n      var cellHeight = 7;\n      var col1Width = tableWidth * 0.4;\n      var col2Width = tableWidth * 0.6;\n\n      // Draw table border\n      doc.setDrawColor(158);\n      doc.rect(margin, yPosition, tableWidth, specs.length * cellHeight);\n\n      for (var s = 0; s < specs.length; s++) {\n        var spec = specs[s];\n        \n        // Skip if value is null or empty\n        if (!spec.value || spec.value === 'null' || spec.value === '') {\n          continue;\n        }\n\n        var rowY = yPosition + (s * cellHeight);\n        \n        // Draw row border\n        doc.setDrawColor(216);\n        if (s > 0) {\n          doc.line(margin, rowY, margin + tableWidth, rowY);\n        }\n        \n        // Label (left column)\n        doc.setFont(undefined, 'normal');\n        doc.setTextColor(0);\n        doc.text(spec.label, margin + 2, rowY + 5);\n        \n        // Value (right column)\n        doc.setTextColor(96);\n        doc.text(String(spec.value), margin + col1Width + 2, rowY + 5);\n      }\n\n      yPosition += (specs.length * cellHeight) + 15;\n\n      // Product Details\n      if (yPosition > 250) {\n        doc.addPage();\n        yPosition = 20;\n      }\n\n      doc.setFontSize(14);\n      doc.setFont(undefined, 'bold');\n      doc.setTextColor(0);\n      doc.text('Product Information', margin, yPosition);\n      yPosition += 10;\n\n      doc.setFontSize(11);\n      doc.setFont(undefined, 'normal');\n\n      // Price\n      doc.setFont(undefined, 'bold');\n      doc.text('Price:', margin, yPosition);\n      doc.setFont(undefined, 'normal');\n      doc.text(productData.price, margin + 50, yPosition);\n      yPosition += 8;\n\n      // Availability\n      doc.setFont(undefined, 'bold');\n      doc.text('Availability:', margin, yPosition);\n      doc.setFont(undefined, 'normal');\n      if (productData.available) {\n        doc.setTextColor(0, 128, 0);\n        doc.text('In Stock', margin + 50, yPosition);\n      } else {\n        doc.setTextColor(255, 0, 0);\n        doc.text('Out of Stock', margin + 50, yPosition);\n      }\n      doc.setTextColor(0);\n      yPosition += 8;\n\n      // SKU\n      if (productData.sku) {\n        doc.setFont(undefined, 'bold');\n        doc.text('SKU:', margin, yPosition);\n        doc.setFont(undefined, 'normal');\n        doc.text(String(productData.sku), margin + 50, yPosition);\n        yPosition += 8;\n      }\n\n      // Vendor\n      if (productData.vendor) {\n        doc.setFont(undefined, 'bold');\n        doc.text('Brand:', margin, yPosition);\n        doc.setFont(undefined, 'normal');\n        doc.text(productData.vendor, margin + 50, yPosition);\n        yPosition += 8;\n      }\n\n      // Type\n      if (productData.type) {\n        doc.setFont(undefined, 'bold');\n        doc.text('Type:', margin, yPosition);\n        doc.setFont(undefined, 'normal');\n        doc.text(productData.type, margin + 50, yPosition);\n        yPosition += 8;\n      }\n\n      yPosition += 5;\n\n      // Description\n      if (productData.description && productData.description.trim() !== '') {\n        if (yPosition > 250) {\n          doc.addPage();\n          yPosition = 20;\n        }\n\n        doc.setFontSize(14);\n        doc.setFont(undefined, 'bold');\n        doc.text('Description', margin, yPosition);\n        yPosition += 10;\n\n        doc.setFontSize(10);\n        doc.setFont(undefined, 'normal');\n        var descLines = doc.splitTextToSize(productData.description, contentWidth);\n        \n        for (var i = 0; i < descLines.length; i++) {\n          if (yPosition > 270) {\n            doc.addPage();\n            yPosition = 20;\n          }\n          doc.text(descLines[i], margin, yPosition);\n          yPosition += 5;\n        }\n      }\n\n      // Tags\n      if (productData.tags && productData.tags.length > 0) {\n        yPosition += 10;\n        if (yPosition > 270) {\n          doc.addPage();\n          yPosition = 20;\n        }\n        doc.setFontSize(12);\n        doc.setFont(undefined, 'bold');\n        doc.text('Tags', margin, yPosition);\n        yPosition += 8;\n\n        doc.setFontSize(10);\n        doc.setFont(undefined, 'normal');\n        var tagsText = productData.tags.join(', ');\n        var tagLines = doc.splitTextToSize(tagsText, contentWidth);\n        for (var j = 0; j < tagLines.length; j++) {\n          doc.text(tagLines[j], margin, yPosition);\n          yPosition += 5;\n        }\n      }\n\n      // Footer\n      var pageCount = doc.internal.getNumberOfPages();\n      for (var p = 1; p <= pageCount; p++) {\n        doc.setPage(p);\n        doc.setFontSize(8);\n        doc.setTextColor(120);\n        doc.text('Page ' + p + ' of ' + pageCount, pageWidth - margin - 20, doc.internal.pageSize.getHeight() - 10);\n      }\n\n      // Save PDF\n      var filename = productData.title.replace(/[^a-z0-9]/gi, '_').toLowerCase().substring(0, 50) + '.pdf';\n      doc.save(filename);\n\n      button.disabled = false;\n      button.innerHTML = originalHTML;\n\n    } catch (error) {\n      console.error('PDF Error:', error);\n      alert('Error creating PDF: ' + error.message);\n      button.disabled = false;\n      button.innerHTML = originalHTML;\n    }\n  });\n});\n</script>\n\n<style>\n  #download-pdf-btn:hover {\n    opacity: 0.9;\n    transform: translateY(-1px);\n    transition: all 0.2s ease;\n  }\n\n  #download-pdf-btn:active {\n    transform: translateY(0);\n  }\n\n  #download-pdf-btn:disabled {\n    opacity: 0.6;\n    cursor: not-allowed;\n  }\n</style>"
+          }
+        },
+        "share_buttons_AzrpcW": {
+          "type": "share_buttons",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor",
+        "title",
+        "price",
+        "payment_terms",
+        "separator",
+        "liquid_tmzkAX",
+        "variant_picker",
+        "quantity_selector",
+        "buy_buttons",
+        "accordion_grFqeR",
+        "accordion_zyngFG",
+        "liquid_BeU7cf",
+        "share_buttons_AzrpcW"
+      ],
+      "settings": {
+        "color_scheme": "scheme-312794de-9b4c-482f-a3df-b0a3d2e1e474",
+        "container_size": "lg",
+        "product_info_size": 40,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": false,
+        "desktop_media_layout": "grid_2x",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
+    },
+    "ss_scrolling_images_ALXMhD": {
+      "type": "ss-scrolling-images",
+      "blocks": {
+        "image_hdpQgh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/industry-removebg-preview.png",
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_Czgwxy": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images__1_-removebg-preview.png",
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_XAHpYP": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/images_60eb271b-b28a-4295-91eb-e49c3828dfc0.png",
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_a3g8Fz": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/WDC-Logo-Blue-RGB.svg",
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_PtUrgg": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/IGI_180ae2a9-721f-4ee8-9d2b-c84ed94c1b49_1-removebg-preview.png",
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_eQmM96": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/purepng.com-fedex-logologobrand-logoiconslogos-251519939539h7rji.png",
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_UH6cQm": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ncdia_logo_1__1_-removebg-preview.png",
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_QHALNj": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/World-Federation-Diamond-Bourses-removebg-preview.png",
+            "url": "",
+            "text": ""
+          }
+        },
+        "image_9Vwb9E": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/GIA-removebg-preview.png",
+            "url": "",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "image_hdpQgh",
+        "image_Czgwxy",
+        "image_XAHpYP",
+        "image_a3g8Fz",
+        "image_PtUrgg",
+        "image_eQmM96",
+        "image_UH6cQm",
+        "image_QHALNj",
+        "image_9Vwb9E"
+      ],
+      "custom_css": [
+        "img {object-fit: contain;}"
+      ],
+      "name": "SS - Scrolling images",
+      "settings": {
+        "heading": "<p>Trusted by Industry Leaders</p>",
+        "heading_custom": true,
+        "heading_font": "montserrat_n4",
+        "heading_size": 36,
+        "heading_height": 130,
+        "heading_align": "center",
+        "slider_speed": 40,
+        "slider_gap": 50,
+        "slider_gap_mobile": 10,
+        "slider_mt": 50,
+        "slider_direction": "left",
+        "pause_hover": false,
+        "image_width_desktop": 120,
+        "image_width_mobile": 190,
+        "image_height_desktop": 100,
+        "image_height_mobile": 80,
+        "image_radius": 10,
+        "text_custom": false,
+        "text_font": "assistant_n4",
+        "text_size": 14,
+        "text_height": 130,
+        "text_padding": 10,
+        "text_radius": 8,
+        "text_mt": 30,
+        "heading_color": "#000000",
+        "text_color": "#000000",
+        "text_bg": "#ffffff",
+        "background_color": "#f8f8f8",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 16,
+        "padding_horizontal": 0,
+        "padding_horizontal_mobile": 0,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "trust_certification_TiFc8Q": {
+      "type": "trust-certification",
+      "blocks": {
+        "trust_item_kEfHm9": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "certificate",
+            "filled_icon": false,
+            "title": "GIA Certified",
+            "description": "All diamonds certified by the Gemological Institute of America"
+          }
+        },
+        "trust_item_86zMwn": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "lock",
+            "filled_icon": false,
+            "title": "Secure Payment",
+            "description": "256-bit SSL encryption for safe and secure transactions"
+          }
+        },
+        "trust_item_DLhVzD": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "heart",
+            "filled_icon": false,
+            "title": "Verified Authentic",
+            "description": "Independent third-party authentication available on request"
+          }
+        },
+        "trust_item_N7b3wT": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "shield-check",
+            "filled_icon": false,
+            "title": "Lifetime Warranty",
+            "description": "Comprehensive coverage for manufacturing defects"
+          }
+        },
+        "trust_item_7n4NKj": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "package",
+            "filled_icon": false,
+            "title": "Insured Shipping",
+            "description": "Free shipping with full insurance on all orders"
+          }
+        },
+        "trust_item_QAieT7": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "award",
+            "filled_icon": false,
+            "title": "Free Appraisal",
+            "description": "Complimentary professional appraisal included"
+          }
+        },
+        "trust_item_9a9rir": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "users",
+            "filled_icon": false,
+            "title": "Expert Support",
+            "description": "Gemologists available to answer all your questions"
+          }
+        },
+        "trust_item_jB8wqY": {
+          "type": "trust_item",
+          "settings": {
+            "icon": "check-circle",
+            "filled_icon": false,
+            "title": "Authentic Guarantee",
+            "description": "100% natural diamonds, verified and authenticated"
+          }
+        }
+      },
+      "block_order": [
+        "trust_item_kEfHm9",
+        "trust_item_86zMwn",
+        "trust_item_DLhVzD",
+        "trust_item_N7b3wT",
+        "trust_item_7n4NKj",
+        "trust_item_QAieT7",
+        "trust_item_9a9rir",
+        "trust_item_jB8wqY"
+      ],
+      "name": "Trust & Certification",
+      "settings": {
+        "show_heading": true,
+        "heading": "Why Choose DirectDiam",
+        "heading_size": 28,
+        "heading_color": "#000000",
+        "section_width": 1400,
+        "columns_desktop": 4,
+        "columns_tablet": 2,
+        "columns_mobile": 1,
+        "mobile_slider": true,
+        "gap_size": 30,
+        "background_color": "#f8f8f8",
+        "border_color": "#e5e5e5",
+        "card_background": "#fafafa",
+        "card_border_color": "#e5e5e5",
+        "hover_border_color": "#c9a961",
+        "icon_color": "#c9a961",
+        "title_color": "#000000",
+        "description_color": "#666666",
+        "icon_size": 50,
+        "title_size": 14,
+        "description_size": 13,
+        "item_padding": 30,
+        "border_radius": 8,
+        "padding_top": 60,
+        "padding_bottom": 60
+      }
+    },
+    "ss_testimonial_8_JmW6T3": {
+      "type": "ss-testimonial-8",
+      "blocks": {
+        "slide_J3ayec": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "I love it! 😍",
+            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+            "author_date": "Cathrine"
+          }
+        },
+        "slide_pQXARC": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "I love it! 😍",
+            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+            "author_date": "Cathrine"
+          }
+        },
+        "slide_EfGDUc": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "I love it! 😍",
+            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+            "author_date": "Cathrine"
+          }
+        },
+        "slide_XLJtWH": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "I love it! 😍",
+            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+            "author_date": "Cathrine"
+          }
+        },
+        "slide_JPVQYT": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "I love it! 😍",
+            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+            "author_date": "Cathrine"
+          }
+        },
+        "slide_BwzbbJ": {
+          "type": "slide",
+          "settings": {
+            "stars_count": 5,
+            "heading": "I love it! 😍",
+            "text": "I was initially hesitant to switch from my usual brand to this new one, but I'm so glad I did! This product has exceeded my expectations. It's not only affordable but also incredibly efficient. The quality is top-notch, and it's user-friendly.",
+            "author_date": "Cathrine"
+          }
+        }
+      },
+      "block_order": [
+        "slide_J3ayec",
+        "slide_pQXARC",
+        "slide_EfGDUc",
+        "slide_XLJtWH",
+        "slide_JPVQYT",
+        "slide_BwzbbJ"
+      ],
+      "disabled": true,
+      "name": "SS - Testimonial #8",
+      "settings": {
+        "heading": "Our customers tell it better than we do!",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "rating_text": "Excellent",
+        "rating_text_custom": false,
+        "rating_text_font": "josefin_sans_n4",
+        "rating_text_size": 24,
+        "rating_text_size_mobile": 20,
+        "rating_text_height": 130,
+        "rating_text_mt": 16,
+        "rating": 4.7,
+        "rating_hide": false,
+        "rating_text_hide": false,
+        "rating_align": "center",
+        "stars_count": 5,
+        "stars_size": 28,
+        "stars_size_mobile": 24,
+        "stars_align": "center",
+        "text": "",
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 20,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_align": "center",
+        "text_mt": 16,
+        "slider_width": 80,
+        "slider_view": 3,
+        "slider_view_mobile": 1.2,
+        "slider_gap": 20,
+        "slider_gap_mobile": 20,
+        "slider_mt": 36,
+        "card_padding_vertical": 32,
+        "card_padding_vertical_mobile": 24,
+        "card_padding_horizontal": 40,
+        "card_padding_horizontal_mobile": 24,
+        "card_radius": 16,
+        "card_border_thickness": 0,
+        "card_shadow": true,
+        "card_heading_custom": false,
+        "card_heading_font": "josefin_sans_n4",
+        "card_heading_size": 24,
+        "card_heading_size_mobile": 20,
+        "card_heading_height": 130,
+        "card_heading_align": "center",
+        "card_heading_mt": 16,
+        "card_text_custom": false,
+        "card_text_font": "josefin_sans_n4",
+        "card_text_size": 14,
+        "card_text_size_mobile": 14,
+        "card_text_height": 150,
+        "card_text_align": "center",
+        "card_text_mt": 16,
+        "card_text_more": "View More",
+        "card_text_less": "View Less",
+        "card_count_words": 20,
+        "card_author_date_text_custom": false,
+        "card_author_date_text_font": "josefin_sans_n4",
+        "card_author_date_text_size": 16,
+        "card_author_date_text_size_mobile": 16,
+        "card_author_date_text_height": 130,
+        "card_author_date_text_align": "center",
+        "card_author_date_text_mt": 16,
+        "arrow_size": 50,
+        "arrow_size_mobile": 50,
+        "arrow_icon_size": 28,
+        "arrow_icon_size_mobile": 28,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": false,
+        "dots_size": 12,
+        "dots_size_mobile": 12,
+        "dots_show_desktop": false,
+        "dots_show_mobile": false,
+        "button": "View All",
+        "button_url": "",
+        "button_custom": false,
+        "button_font": "josefin_sans_n4",
+        "button_size": 16,
+        "button_size_mobile": 14,
+        "button_height": 100,
+        "button_align": "center",
+        "button_mt": 16,
+        "button_padding_vertical": 20,
+        "button_padding_horizontal": 16,
+        "button_radius": 8,
+        "button_border_thickness": 0,
+        "button_color": "#ffffff",
+        "button_hover_color": "#ffffff",
+        "button_bg_color": "#000000",
+        "button_bg_hover_color": "#000000",
+        "button_border_color": "#000000",
+        "button_border_hover_color": "#000000",
+        "card_bg_color": "#ffffff",
+        "card_border_color": "#000000",
+        "card_shadow_color": "#faf9f1",
+        "card_heading_color": "#000000",
+        "card_text_color": "#000000",
+        "card_author_date_text_color": "#000000",
+        "arrow_color": "#000000",
+        "arrow_hover_color": "#000000",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "dots_color": "#000000",
+        "heading_color": "#000000",
+        "rating_text_color": "#000000",
+        "stars_bg_color": "#00b67a",
+        "stars_color": "#ffffff",
+        "text_color": "#000000",
+        "background_color": "#ffffff",
+        "background_gradient": "linear-gradient(0deg, rgba(250, 249, 241, 1), rgba(248, 248, 248, 1) 100%)",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 60,
+        "padding_bottom": 60,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": true,
+        "content_width": 120,
+        "border_thickness": 0,
+        "lazy": true
+      }
+    },
+    "ss_testimonial_9_jMNLPC": {
+      "type": "ss-testimonial-9",
+      "blocks": {
+        "testimonial_qUgiUy": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "text": "The real gem is the integrated smartphone app with guided classes and body tracking. I really like it.",
+            "hide_avatar": false,
+            "author": "Lara S.",
+            "stars_count": 5
+          }
+        },
+        "testimonial_TEFaV8": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "text": "The real gem is the integrated smartphone app with guided classes and body tracking. I really like it.",
+            "hide_avatar": false,
+            "author": "Lara S.",
+            "stars_count": 5
+          }
+        },
+        "testimonial_Hg8K6a": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "text": "The real gem is the integrated smartphone app with guided classes and body tracking. I really like it.",
+            "hide_avatar": false,
+            "author": "Lara S.",
+            "stars_count": 5
+          }
+        },
+        "testimonial_nwykFe": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "text": "The real gem is the integrated smartphone app with guided classes and body tracking. I really like it.",
+            "hide_avatar": false,
+            "author": "Lara S.",
+            "stars_count": 5
+          }
+        },
+        "testimonial_mYninz": {
+          "type": "testimonial",
+          "settings": {
+            "title": "",
+            "text": "The real gem is the integrated smartphone app with guided classes and body tracking. I really like it.",
+            "hide_avatar": false,
+            "author": "Lara S.",
+            "stars_count": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_qUgiUy",
+        "testimonial_TEFaV8",
+        "testimonial_Hg8K6a",
+        "testimonial_nwykFe",
+        "testimonial_mYninz"
+      ],
+      "disabled": true,
+      "name": "SS - Testimonial #9",
+      "settings": {
+        "heading": "<h2>Over <strong>250+</strong> reviews on <em>Google</em> from our customers</h2>",
+        "heading_custom": false,
+        "heading_font": "josefin_sans_n4",
+        "heading_size": 40,
+        "heading_size_mobile": 24,
+        "heading_height": 130,
+        "heading_align": "center",
+        "bottom": "",
+        "bottom_custom": false,
+        "bottom_font": "josefin_sans_n4",
+        "bottom_size": 18,
+        "bottom_size_mobile": 16,
+        "bottom_height": 130,
+        "bottom_align": "center",
+        "bottom_mt": 24,
+        "rating": 4.9,
+        "rating_hide": false,
+        "rating_align": "center",
+        "rating_custom": false,
+        "rating_font": "josefin_sans_n4",
+        "rating_size": 18,
+        "rating_size_mobile": 16,
+        "rating_height": 130,
+        "rating_mt": 16,
+        "stars_count": 5,
+        "stars_size": 16,
+        "slider_view": "5",
+        "slider_view_mobile": 1.5,
+        "slider_gap": 20,
+        "slider_gap_mobile": 20,
+        "slider_mt": 20,
+        "card_padding_vertical": 24,
+        "card_padding_vertical_mobile": 16,
+        "card_padding_horizontal": 24,
+        "card_padding_horizontal_mobile": 16,
+        "card_radius": 30,
+        "card_border_thickness": 0,
+        "card_shadow": false,
+        "title_custom": false,
+        "title_font": "josefin_sans_n4",
+        "title_size": 12,
+        "title_size_mobile": 12,
+        "title_height": 130,
+        "text_custom": false,
+        "text_font": "josefin_sans_n4",
+        "text_size": 18,
+        "text_size_mobile": 16,
+        "text_height": 130,
+        "text_mt": 20,
+        "avatar_size": 62,
+        "avatar_size_mobile": 40,
+        "author_custom": false,
+        "author_font": "josefin_sans_n4",
+        "author_size": 18,
+        "author_size_mobile": 16,
+        "author_height": 130,
+        "author_mt": 20,
+        "navigation_mt": 32,
+        "arrow_size": 34,
+        "arrow_size_mobile": 34,
+        "arrow_icon_size": 34,
+        "arrow_icon_size_mobile": 34,
+        "arrow_border_thickness": 0,
+        "arrow_show_desktop": true,
+        "arrow_show_mobile": true,
+        "progress_width": 150,
+        "progress_width_mobile": 150,
+        "progress_height": 6,
+        "progress_height_mobile": 6,
+        "progress_show_desktop": true,
+        "progress_show_mobile": true,
+        "card_bg_color": "#f8f8f8",
+        "card_border_color": "#000000",
+        "card_shadow_color": "#000000",
+        "title_color": "#b8b8b8",
+        "text_color": "#000000",
+        "author_color": "#000000",
+        "arrow_color": "#e6e6e6",
+        "arrow_hover_color": "#a7a7a4",
+        "arrow_bg_color": "#ffffff",
+        "arrow_bg_hover_color": "#ffffff",
+        "arrow_border_color": "#ffffff",
+        "arrow_border_hover_color": "#ffffff",
+        "progress_bg_color": "#d9d9d9",
+        "progress_color": "#838383",
+        "heading_color": "#000000",
+        "bottom_color": "#000000",
+        "rating_text_color": "#000000",
+        "stars_color": "#f4ac03",
+        "background_color": "#ffffff",
+        "background_gradient": "",
+        "border_color": "#000000",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "padding_horizontal": 5,
+        "padding_horizontal_mobile": 1.5,
+        "full_width": false,
+        "content_width": 190,
+        "border_thickness": 0,
+        "lazy": false
+      }
+    },
+    "related-products": {
+      "type": "related-products",
+      "custom_css": [
+        ".section-header.justify-self-center.text-center {width: 100% !important; max-width: 100% !important; text-align: -webkit-left !important;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "separate_section_with_border": false,
+        "hide_product_information": false,
+        "stack_products": false,
+        "recommendations_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Related products",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "ss_scrolling_images_ALXMhD",
+    "trust_certification_TiFc8Q",
+    "ss_testimonial_8_JmW6T3",
+    "ss_testimonial_9_jMNLPC",
+    "related-products"
+  ]
+}
