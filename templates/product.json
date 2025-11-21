@@ -256,7 +256,7 @@
         "background_gradient": "",
         "border_color": "#000000",
         "margin_top": 0,
-        "margin_bottom": 0,
+        "margin_bottom": 36,
         "padding_top": 36,
         "padding_bottom": 16,
         "padding_horizontal": 0,
@@ -265,6 +265,91 @@
         "content_width": 120,
         "border_thickness": 0,
         "lazy": true
+      }
+    },
+    "rich_text_9hwhKx": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_FjU77L": {
+          "type": "heading",
+          "settings": {
+            "text": "MATCHING PAIR DIAMONDS",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_FjU77L"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
+    "ss_featured_collection_tabs_DN7rix": {
+      "type": "ss-featured-collection-tabs",
+      "blocks": {
+        "collection_Mm3PG4": {
+          "type": "collection",
+          "settings": {
+            "title": "",
+            "collection": "matchig-pair",
+            "product_limit": 5,
+            "product_row_count": 5,
+            "mobile_product_row_count": 1,
+            "enable_swiper_on_mobile": false,
+            "product_image_orientation": "square",
+            "button_mt": 48,
+            "button_text": "Shop Now",
+            "button_link": "shopify://collections/all"
+          }
+        }
+      },
+      "block_order": [
+        "collection_Mm3PG4"
+      ],
+      "name": "SS - Featured Collections (tabs)",
+      "settings": {
+        "tabs_color": "#7e7e7e",
+        "tabs_color_active": "#000000",
+        "tabs_size": 18,
+        "tabs_size_mobile": 14,
+        "tabs_padding_bottom": 16,
+        "tabs_align": "center",
+        "tabs_spacing": 48,
+        "tabs_spacing_mobile": 36,
+        "tabs_margin_bottom": 40,
+        "secondary_image_hover": true,
+        "image_roundness": 0,
+        "image_gap": 20,
+        "product_title_size": 14,
+        "product_title_line_height": 1.3,
+        "product_title_color": "#212121",
+        "product_price_size": 14,
+        "discounted_price_color": "#ff3451",
+        "normal_price_color": "#212121",
+        "button_color": "#FFFFFF",
+        "button_background_color": "#000000",
+        "button_color_hover": "#FFFFFF",
+        "button_background_color_hover": "#000000",
+        "button_border_color": "#FFFFFF",
+        "button_height": 44,
+        "button_width": 200,
+        "button_font_size": 16,
+        "button_border_radius": 2,
+        "button_border_thickness": 0,
+        "background-color": "#FFFFFF",
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "padding_top": 0,
+        "padding_bottom": 36,
+        "padding_sides": 5,
+        "padding_sides_mobile": 1.5,
+        "section-width": 120
       }
     },
     "trust_certification_TiFc8Q": {
@@ -752,6 +837,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "custom_css": [
         ".section-header.justify-self-center.text-center {width: 100% !important; max-width: 100% !important; text-align: -webkit-left !important;}"
       ],
@@ -774,6 +860,8 @@
   "order": [
     "main",
     "ss_scrolling_images_ALXMhD",
+    "rich_text_9hwhKx",
+    "ss_featured_collection_tabs_DN7rix",
     "trust_certification_TiFc8Q",
     "ss_testimonial_8_JmW6T3",
     "ss_testimonial_9_jMNLPC",
