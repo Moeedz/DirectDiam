@@ -290,6 +290,29 @@
         "remove_vertical_spacing": true
       }
     },
+    "rich_text_VfaKQE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_cgVGNf": {
+          "type": "heading",
+          "settings": {
+            "text": "FANCY COLOR DIAMONDS",
+            "heading_tag": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_cgVGNf"
+      ],
+      "name": "t:sections.rich_text.presets.rich_text.name",
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": true
+      }
+    },
     "ss_featured_collection_tabs_DN7rix": {
       "type": "ss-featured-collection-tabs",
       "blocks": {
@@ -861,6 +884,7 @@
     "main",
     "ss_scrolling_images_ALXMhD",
     "rich_text_9hwhKx",
+    "rich_text_VfaKQE",
     "ss_featured_collection_tabs_DN7rix",
     "trust_certification_TiFc8Q",
     "ss_testimonial_8_JmW6T3",
