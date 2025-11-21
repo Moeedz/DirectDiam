@@ -155,7 +155,7 @@
         "image_XAHpYP": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/images_60eb271b-b28a-4295-91eb-e49c3828dfc0.png",
+            "image": "shopify://shop_images/images_60eb271b-b28a-4295-91eb-e49c3828dfc0-removebg-preview.png",
             "url": "",
             "text": ""
           }
@@ -353,6 +353,7 @@
         "trust_item_9a9rir",
         "trust_item_jB8wqY"
       ],
+      "disabled": true,
       "name": "Trust & Certification",
       "settings": {
         "show_heading": true,
