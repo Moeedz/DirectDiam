@@ -322,7 +322,7 @@
         "tabs_align": "center",
         "tabs_spacing": 48,
         "tabs_spacing_mobile": 36,
-        "tabs_margin_bottom": 40,
+        "tabs_margin_bottom": 0,
         "secondary_image_hover": true,
         "image_roundness": 0,
         "image_gap": 20,
