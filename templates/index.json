@@ -9,6 +9,37 @@
  */
 {
   "sections": {
+    "video_creLGJ": {
+      "type": "video",
+      "blocks": {
+        "play_WXXpGk": {
+          "type": "play",
+          "settings": {
+            "icon_color": "#ffffff"
+          }
+        },
+        "heading_KW69wP": {
+          "type": "heading",
+          "settings": {
+            "text": "",
+            "heading_tag": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "play_WXXpGk",
+        "heading_KW69wP"
+      ],
+      "name": "t:sections.video.presets.video.name",
+      "settings": {
+        "autoplay": true,
+        "show_controls": false,
+        "video_size": "md",
+        "video": "shopify://files/videos/Natural_Colored_Diamonds_Video_Generation.mp4",
+        "external_video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "text_color": "#ffffff"
+      }
+    },
     "slideshow": {
       "type": "slideshow",
       "blocks": {
@@ -43,6 +74,7 @@
       "block_order": [
         "slide-1"
       ],
+      "disabled": true,
       "custom_css": [
         "@media screen and (max-width: 767px) {p.h6 {display: none; }}"
       ],
@@ -1115,6 +1147,7 @@
     }
   },
   "order": [
+    "video_creLGJ",
     "slideshow",
     "ss_scrolling_images_PTWX3y",
     "rich_text_iDUjbg",
