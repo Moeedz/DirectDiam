@@ -192,7 +192,7 @@
         "slider_gap": 50,
         "slider_gap_mobile": 10,
         "slider_mt": 50,
-        "slider_direction": "left",
+        "slider_direction": "right",
         "pause_hover": false,
         "image_width_desktop": 120,
         "image_width_mobile": 190,
