@@ -275,7 +275,7 @@
         "slide_4ExAQf": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/purple.png",
+            "image": "shopify://shop_images/diamond.png",
             "title": "Purple Diamonds",
             "button": "Shop Now",
             "url": "shopify://collections/purple"
@@ -311,7 +311,7 @@
         "slide_hNBUgj": {
           "type": "slide",
           "settings": {
-            "image": "shopify://shop_images/green_37150541-3d8f-4bd2-b2dc-a73e6f3eafde.png",
+            "image": "shopify://shop_images/ek-or-diamond.png",
             "title": "Green Diamonds",
             "button": "Shop Now",
             "url": "shopify://collections/green"
