@@ -1,66 +1,233 @@
 {%- assign color_scheme_hash = section.settings.color_scheme.settings.background_gradient | default: section.settings.color_scheme.settings.background | md5 -%}
 
-<div class="section-spacing color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }} {% if section.settings.separate_section_with_border %}bordered-section{% endif %}">
-  <div class="container container--xs">
-    <div class="section-stack text-center">
-      {%- render 'section-header', subheading: section.settings.subheading, heading: section.settings.title, content: section.settings.content, text_alignment: 'center' -%}
+<style>
+  .contact-professional-wrapper {
+    padding: 80px 0;
+  }
+  
+  .contact-professional-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 100px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 40px;
+  }
+  
+  .contact-form-column h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+  }
+  
+  .contact-info-column h2 {
+    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+  }
+  
+  .contact-info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 50px;
+  }
+  
+  .contact-info-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+  }
+  
+  .contact-info-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    margin-top: 3px;
+  }
+  
+  .contact-info-text {
+    font-size: 16px;
+    line-height: 1.6;
+    letter-spacing: 0.3px;
+  }
+  
+  .contact-info-text a {
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .contact-info-text a:hover {
+    text-decoration: underline;
+  }
+  
+  .contact-professional-form .field {
+    margin-bottom: 20px;
+  }
+  
+  .contact-professional-form input[type="text"],
+  .contact-professional-form input[type="email"],
+  .contact-professional-form input[type="tel"],
+  .contact-professional-form textarea {
+    width: 100%;
+    padding: 16px 20px;
+    border: 1px solid #e0e0e0;
+    background: #fff;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-professional-form input:focus,
+  .contact-professional-form textarea:focus {
+    outline: none;
+    border-color: #000;
+  }
+  
+  .contact-professional-form textarea {
+    min-height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-professional-form label {
+    display: block;
+    font-size: 15px;
+    margin-bottom: 8px;
+    letter-spacing: 0.3px;
+  }
+  
+  .contact-submit-btn {
+    padding: 16px 50px;
+    border: 2px solid #000;
+    background: transparent;
+    color: #000;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  .contact-submit-btn:hover {
+    background: #000;
+    color: #fff;
+  }
+  
+  @media (max-width: 990px) {
+    .contact-professional-grid {
+      grid-template-columns: 1fr;
+      gap: 60px;
+      padding: 0 20px;
+    }
+    
+    .contact-professional-wrapper {
+      padding: 60px 0;
+    }
+  }
+</style>
 
-      {%- form 'contact', class: 'form' -%}
-        {%- if form.posted_successfully? -%}
-          {%- assign content = 'contact.form.success_message' | t -%}
-          {%- render 'banner', status: 'success', content: content -%}
-        {%- endif -%}
+<div class="section-spacing color-scheme color-scheme--{{ section.settings.color_scheme.id }} color-scheme--bg-{{ color_scheme_hash }}">
+  <div class="contact-professional-wrapper">
+    <div class="contact-professional-grid">
+      
+      <!-- Contact Form Column -->
+      <div class="contact-form-column">
+        <h2>{{ section.settings.form_heading }}</h2>
+        
+        {%- form 'contact', class: 'contact-professional-form' -%}
+          {%- if form.posted_successfully? -%}
+            {%- assign content = 'contact.form.success_message' | t -%}
+            {%- render 'banner', status: 'success', content: content -%}
+          {%- endif -%}
 
-        {%- if form.errors -%}
-          {%- capture content -%}{{ form.errors.translated_fields[form.errors.first] | capitalize }} {{ form.errors.messages[form.errors.first] }}{%- endcapture -%}
-          {%- render 'banner', status: 'error', content: content -%}
-        {%- endif -%}
+          {%- if form.errors -%}
+            {%- capture content -%}{{ form.errors.translated_fields[form.errors.first] | capitalize }} {{ form.errors.messages[form.errors.first] }}{%- endcapture -%}
+            {%- render 'banner', status: 'error', content: content -%}
+          {%- endif -%}
 
-        <div class="fieldset">
-          <div class="fieldset-row">
-            {%- assign label  = 'contact.form.name' | t -%}
-            {%- render 'input', type: 'text', name: 'contact[name]', label: label, value: customer.name, required: true, autocomplete: 'name' -%}
-
-            {%- assign label  = 'contact.form.email' | t -%}
-            {%- render 'input', type: 'email', name: 'contact[email]', label: label, value: customer.email, required: true, autocomplete: 'email' -%}
+          <div class="field">
+            <label for="contact-name">Name *</label>
+            <input type="text" id="contact-name" name="contact[name]" value="{{ customer.name }}" required autocomplete="name">
           </div>
 
-          {%- for block in section.blocks -%}
-            {%- assign field_title = block.settings.title -%}
+          <div class="field">
+            <label for="contact-email">Email *</label>
+            <input type="email" id="contact-email" name="contact[email]" value="{{ customer.email }}" required autocomplete="email">
+          </div>
 
-            {%- if field_title == blank -%}
-              {%- capture field_title -%}Custom field {% increment custom_field %}{%- endcapture -%}
-            {%- endif -%}
+          {%- if section.settings.show_phone -%}
+          <div class="field">
+            <label for="contact-phone">Phone number</label>
+            <input type="tel" id="contact-phone" name="contact[phone]" autocomplete="tel">
+          </div>
+          {%- endif -%}
 
-            {%- capture name -%}contact[{{ field_title | escape }}]{%- endcapture -%}
+          <div class="field">
+            <label for="contact-message">Message *</label>
+            <textarea id="contact-message" name="contact[body]" required></textarea>
+          </div>
 
-            {%- if block.type == 'text' -%}
-              {%- if block.settings.use_long_text -%}
-                {%- render 'input', name: name, label: block.settings.title, required: block.settings.required, multiline: 4 -%}
-              {%- else -%}
-                {%- render 'input', type: 'text', name: name, label: block.settings.title, required: block.settings.required -%}
-              {%- endif -%}
-            {%- elsif block.type == 'dropdown' and block.settings.values != blank -%}
-              {%- assign values = block.settings.values | split: ',' -%}
-              {%- render 'select', option_values: values, show_empty_value: true, name: name, label: block.settings.title, required: true -%}
-            {%- endif -%}
-          {%- endfor -%}
-
-          {%- assign label = 'contact.form.message' | t -%}
-          {%- render 'input', name: 'contact[body]', label: label, multiline: 4, required: true -%}
+          <button type="submit" class="contact-submit-btn">
+            {{ section.settings.button_text }}
+          </button>
+        {%- endform -%}
+      </div>
+      
+      <!-- Contact Information Column -->
+      <div class="contact-info-column">
+        <h2>{{ section.settings.info_heading }}</h2>
+        
+        <div class="contact-info-items">
+          {%- if section.settings.address != blank -%}
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z" />
+              </svg>
+            </div>
+            <div class="contact-info-text">{{ section.settings.address }}</div>
+          </div>
+          {%- endif -%}
+          
+          {%- if section.settings.phone != blank -%}
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+              </svg>
+            </div>
+            <div class="contact-info-text">
+              <a href="tel:{{ section.settings.phone | replace: ' ', '' | replace: '-', '' }}">{{ section.settings.phone }}</a>
+            </div>
+          </div>
+          {%- endif -%}
+          
+          {%- if section.settings.email != blank -%}
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+              </svg>
+            </div>
+            <div class="contact-info-text">
+              <a href="mailto:{{ section.settings.email }}">{{ section.settings.email }}</a>
+            </div>
+          </div>
+          {%- endif -%}
         </div>
-
-        {%- assign button_content = 'contact.form.submit' | t -%}
-        {%- render 'button', content: button_content, type: 'submit' -%}
-      {%- endform -%}
+      </div>
+      
     </div>
   </div>
 </div>
 
 {% schema %}
 {
-  "name": "t:sections.contact.name",
-  "class": "shopify-section--contact",
+  "name": "Professional Contact",
+  "class": "shopify-section--contact-professional",
   "tag": "section",
   "disabled_on": {
     "groups": ["header", "custom.overlay"]
@@ -69,80 +236,63 @@
     {
       "type": "color_scheme",
       "id": "color_scheme",
-      "label": "t:global.colors.scheme",
+      "label": "Color scheme",
       "default": "scheme-1"
     },
     {
+      "type": "header",
+      "content": "Form Settings"
+    },
+    {
+      "type": "text",
+      "id": "form_heading",
+      "label": "Form heading",
+      "default": "Questions? Send Us An Email"
+    },
+    {
       "type": "checkbox",
-      "id": "separate_section_with_border",
-      "label": "t:global.section.separate_section_with_border",
+      "id": "show_phone",
+      "label": "Show phone field",
       "default": true
     },
     {
-      "type": "inline_richtext",
-      "id": "subheading",
-      "label": "t:global.text.subheading"
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Send"
     },
     {
-      "type": "inline_richtext",
-      "id": "title",
-      "label": "t:global.text.heading",
-      "default": "Contact"
+      "type": "header",
+      "content": "Contact Information"
     },
-    {
-      "type": "richtext",
-      "id": "content",
-      "label": "t:global.text.content"
-    }
-  ],
-  "blocks": [
     {
       "type": "text",
-      "name": "t:sections.contact.blocks.text.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "t:sections.contact.blocks.text.name_label",
-          "default": "Custom field"
-        },
-        {
-          "type": "checkbox",
-          "id": "use_long_text",
-          "label": "t:sections.contact.blocks.text.use_long_text",
-          "default": false
-        },
-        {
-          "type": "checkbox",
-          "id": "required",
-          "label": "t:sections.contact.blocks.text.required",
-          "default": false
-        }
-      ]
+      "id": "info_heading",
+      "label": "Information heading",
+      "default": "Contact Information"
     },
     {
-      "type": "dropdown",
-      "name": "t:sections.contact.blocks.dropdown.name",
-      "settings": [
-        {
-          "type": "text",
-          "id": "title",
-          "label": "t:sections.contact.blocks.dropdown.name_label",
-          "default": "Custom field"
-        },
-        {
-          "type": "text",
-          "id": "values",
-          "label": "t:sections.contact.blocks.dropdown.values",
-          "info": "t:sections.contact.blocks.dropdown.values_info",
-          "default": "value 1, value 2, value 3"
-        }
-      ]
+      "type": "textarea",
+      "id": "address",
+      "label": "Address",
+      "default": "LEIBISH ONLINE INC. 18 E 48th St, Suite 1102 New York, NY 10017 USA"
+    },
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "Phone number",
+      "default": "+(1) 212-921-9700"
+    },
+    {
+      "type": "text",
+      "id": "email",
+      "label": "Email",
+      "default": "info@leibish.com"
     }
   ],
   "presets": [
     {
-      "name": "t:sections.contact.presets.contact_form.name",
+      "name": "Professional Contact",
       "settings": {}
     }
   ]
