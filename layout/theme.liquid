@@ -2,35 +2,44 @@
 
 <html lang="{{ request.locale.iso_code }}" dir="{% render 'direction' %}">
   <head>
-    <script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var saved = localStorage.getItem('buyNowSavedCart');
-    if (!saved) return;
-    if (window.location.pathname.startsWith('/checkout')) return;
-
-    localStorage.removeItem('buyNowSavedCart');
+<script>
+  (function () {
     var rootUrl = window.Shopify?.routes?.root || '/';
 
-    try {
-      var items = JSON.parse(saved);
-      if (!Array.isArray(items) || items.length === 0) return;
+    function restoreCart() {
+      var saved = localStorage.getItem('buyNowSavedCart');
+      if (!saved) return;
+      if (window.location.pathname.startsWith('/checkout')) return;
 
-      fetch(rootUrl + 'cart/clear.js', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' }
-      }).then(function () {
-        return fetch(rootUrl + 'cart/add.js', {
+      localStorage.removeItem('buyNowSavedCart');
+
+      try {
+        var items = JSON.parse(saved);
+        if (!Array.isArray(items) || items.length === 0) return;
+
+        fetch(rootUrl + 'cart/clear.js', {
           method: 'POST',
-          headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({ items: items })
+          headers: { 'Content-Type': 'application/json', Accept: 'application/json' }
+        }).then(function () {
+          return fetch(rootUrl + 'cart/add.js', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+            body: JSON.stringify({ items: items })
+          });
+        }).catch(function (err) {
+          console.error('Cart restore failed:', err);
         });
-      }).catch(function (err) {
-        console.error('Cart restore failed:', err);
-      });
-    } catch (err) {
-      console.error('Cart restore parse failed:', err);
+      } catch (err) {
+        console.error('Cart restore parse failed:', err);
+      }
     }
-  });
+
+    document.addEventListener('DOMContentLoaded', restoreCart);
+
+    window.addEventListener('pageshow', function (event) {
+      if (event.persisted) restoreCart();
+    });
+  })();
 </script>
     {% if page.handle == 'about-fancy-color-diamonds' %}
      <style>
