@@ -26,6 +26,8 @@
             headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
             body: JSON.stringify({ items: items })
           });
+        }).then(function () {
+          window.location.reload();
         }).catch(function (err) {
           console.error('Cart restore failed:', err);
         });
