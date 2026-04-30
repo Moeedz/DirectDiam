@@ -70,12 +70,6 @@
             "payment_button_text_color": "#ffffff"
           }
         },
-        "liquid_YJmDEj": {
-          "type": "liquid",
-          "settings": {
-            "liquid": "<div class=\"custom-buy-now-wrapper\">\n  <button\n    type=\"button\"\n    id=\"CustomBuyNowButton\"\n    class=\"button custom-buy-now-button\"\n  >\n    Buy now\n  </button>\n</div>\n\n<script>\n  document.getElementById('CustomBuyNowButton').addEventListener('click', function () {\n    const productForm = document.querySelector('form[action^=\"/cart/add\"]');\n    if (!productForm) return;\n\n    const formData = new FormData(productForm);\n    const variantId = formData.get('id');\n    if (!variantId) {\n      alert('Please select a variant before continuing.');\n      return;\n    }\n\n    const quantity = parseInt(formData.get('quantity'), 10) || 1;\n    const rootUrl = window.Shopify?.routes?.root || '/';\n\n    fetch(rootUrl + 'cart/add.js', {\n      method: 'POST',\n      headers: { 'Content-Type': 'application/json' },\n      body: JSON.stringify({ id: variantId, quantity: quantity })\n    })\n      .then(function () {\n        window.location.href = rootUrl + 'checkout';\n      })\n      .catch(function () {\n        alert('Sorry, something went wrong. Please try again.');\n      });\n  });\n</script>"
-          }
-        },
         "accordion_grFqeR": {
           "type": "accordion",
           "settings": {
@@ -119,7 +113,6 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
-        "liquid_YJmDEj",
         "accordion_grFqeR",
         "accordion_zyngFG",
         "liquid_BeU7cf",
