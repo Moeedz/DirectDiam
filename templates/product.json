@@ -70,6 +70,12 @@
             "payment_button_text_color": "#ffffff"
           }
         },
+        "liquid_itTaRc": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "document.addEventListener('DOMContentLoaded', function () {\n  const STORAGE_KEY = 'buyNowSavedCart';\n  const rootUrl =\n    window.Shopify?.routes?.root || '/';\n\n  // ── Restore previous cart if returning from abandoned checkout ──\n  restoreSavedCart();\n\n  const buyNowButton = document.getElementById('CustomBuyNowButton');\n  if (!buyNowButton) return;\n\n  const productForm = document.querySelector('form[action^=\"/cart/add\"]');\n  if (!productForm) {\n    console.warn('Custom Buy Now: No product form found on this page.');\n    return;\n  }\n\n  buyNowButton.addEventListener('click', async function () {\n    const formData = new FormData(productForm);\n    const variantId = formData.get('id');\n    if (!variantId) {\n      alert('Please select a variant before continuing.');\n      return;\n    }\n\n    const quantity = parseInt(formData.get('quantity'), 10) || 1;\n\n    buyNowButton.disabled = true;\n    buyNowButton.classList.add('is-loading');\n\n    try {\n      // 1) Snapshot the current cart\n      const cart = await fetchJSON(rootUrl + 'cart.js');\n\n      // 2) Save existing items (if any) so they can be restored later\n      if (cart.items && cart.items.length > 0) {\n        const savedItems = cart.items.map(item => ({\n          id: item.variant_id,\n          quantity: item.quantity,\n          properties: item.properties\n        }));\n        localStorage.setItem(STORAGE_KEY, JSON.stringify(savedItems));\n      }\n\n      // 3) Clear cart\n      await postJSON(rootUrl + 'cart/clear.js');\n\n      // 4) Add the buy-now item\n      await postJSON(rootUrl + 'cart/add.js', {\n        id: variantId,\n        quantity: quantity\n      });\n\n      // 5) Redirect to checkout\n      window.location.href = rootUrl + 'checkout';\n    } catch (error) {\n      console.error('Custom Buy Now error:', error);\n      alert('Sorry, something went wrong. Please try again.');\n      buyNowButton.disabled = false;\n      buyNowButton.classList.remove('is-loading');\n    }\n  });\n\n  // ── Helper: restore saved cart on non-checkout pages ──\n  async function restoreSavedCart() {\n    const saved = localStorage.getItem(STORAGE_KEY);\n    if (!saved) return;\n\n    // Don't restore while still on checkout\n    if (window.location.pathname.startsWith('/checkout')) return;\n\n    localStorage.removeItem(STORAGE_KEY);\n\n    try {\n      const items = JSON.parse(saved);\n      if (!Array.isArray(items) || items.length === 0) return;\n\n      // Clear whatever checkout left behind (the buy-now item)\n      await postJSON(rootUrl + 'cart/clear.js');\n\n      // Re-add original items\n      await postJSON(rootUrl + 'cart/add.js', { items: items });\n    } catch (err) {\n      console.error('Cart restore failed:', err);\n    }\n  }\n\n  // ── Fetch helpers ──\n  async function fetchJSON(url) {\n    const res = await fetch(url, {\n      headers: { Accept: 'application/json' }\n    });\n    if (!res.ok) throw new Error('GET failed: ' + url);\n    return res.json();\n  }\n\n  async function postJSON(url, body) {\n    const res = await fetch(url, {\n      method: 'POST',\n      headers: {\n        'Content-Type': 'application/json',\n        Accept: 'application/json'\n      },\n      body: body ? JSON.stringify(body) : undefined\n    });\n    if (!res.ok) throw new Error('POST failed: ' + url);\n    return res.json();\n  }\n});"
+          }
+        },
         "accordion_grFqeR": {
           "type": "accordion",
           "settings": {
@@ -113,6 +119,7 @@
         "variant_picker",
         "quantity_selector",
         "buy_buttons",
+        "liquid_itTaRc",
         "accordion_grFqeR",
         "accordion_zyngFG",
         "liquid_BeU7cf",
